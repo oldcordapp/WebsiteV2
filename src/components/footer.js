@@ -13,7 +13,6 @@ const Footer = () => {
                 <text className="footer-navigation-header">Oldcord-related</text>
                 <text className="footer-navigation-link">Download</text>
                 <text className="footer-navigation-link">Branding Guidelines</text>
-                <text className="footer-navigation-link">Donate</text>
             </div>
             <div className="footer-navigation-section">
                 <text className="footer-navigation-header">Advanced users</text>
@@ -30,7 +29,6 @@ const Footer = () => {
             <div className="footer-navigation-section">
                 <text className="footer-navigation-header">More</text>
                 <text className="footer-navigation-link">Reimplementaion progress</text>
-                <text className="footer-navigation-link footer-navigation-external-link">CordArchive</text>
             </div>
         </div>
         <hr />
