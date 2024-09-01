@@ -13,8 +13,8 @@ const MainPage = () => {
           <div className="taglineSubitle">{randomTagline.subtitle}</div>
         </div>
         <div className="buttonContainer">
-          <text className="button button-hurple button-pushLeft">Get Started</text>
-          <text className="button button-white">Host your own Oldcord instance</text>
+          <span className="button button-hurple button-pushLeft">Get Started</span>
+          <span className="button button-white">Host your own Oldcord instance</span>
         </div>
       </div>
       <div className="mainPageUpsell">

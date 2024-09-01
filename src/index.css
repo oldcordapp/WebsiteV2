@@ -24,7 +24,6 @@ body {
 
 .headerInner {
   margin: 0 auto;
-  position: relative;
   height: 100%;
   display: flex;
   align-items: center;
@@ -95,7 +94,7 @@ body {
 
 .mainPageHeader {
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   max-width: 80%;
@@ -225,7 +224,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .upsell-text {
@@ -248,6 +247,17 @@ body {
 
 .upsell .button {
   padding: 12px;
+}
+
+.footer-notice {
+  color: #7a8d9f;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .notice {
