@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactComponent as Hurple } from "../assets/hurple.svg";
 
 const Footer = () => {

@@ -271,3 +271,33 @@ body {
   background-color: white;
   color: black;
 }
+
+.marquee {
+  margin-top: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  rotate: -2deg;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee linear infinite;
+}
+
+.marquee-content img {
+  width: 250px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-64.5%);
+  }
+}
