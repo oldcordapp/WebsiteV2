@@ -18,15 +18,9 @@ const Download = () => {
           <div className={`${styles["download-section-content-os"]}`}>
             <span className={styles["download-title"]}>Windows</span>
             <span
-              className={`button button-hurple ${styles.button} ${styles["download-button"]}`}
+              className={`button ${styles.button} ${styles["download-button"]} ${"button-disabled"}`}
             >
-              <span
-                className={`button ${styles.button} ${
-                  styles["download-button"]
-                } ${"button-disabled"}`}
-              >
-                Down for updating.
-              </span>
+              Temporarily down
             </span>
           </div>
           <div className={`${styles["download-section-content-os"]}`}>
