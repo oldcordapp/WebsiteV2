@@ -19,7 +19,7 @@ const marqueeAnimation = (width) => keyframes`
 
 const MarqueeContent = styled.div`
   display: flex;
-  animation: ${({totalWidth}) => marqueeAnimation(totalWidth)} 10s linear infinite;
+  animation: ${({totalWidth}) => marqueeAnimation(totalWidth)} 15s linear infinite;
 `;
 
 const Image = styled.img`
