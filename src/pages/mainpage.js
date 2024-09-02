@@ -134,12 +134,12 @@ const MainPage = () => {
                 time!
               </span>
               <span className={styles["upsell-small-print"]}>
-                *Clients coming from a certain instant messaging service are not
-                open source. They are downloaded and launched in the browser by
-                the bootstraper, with modifications for QoL features and bug
-                fixes. We reverse-engineered the API and websocket responses
-                using publicly available sources. The server code does not
-                include any code from that service.
+                *Clients coming from a specific instant messaging service are
+                not open source and are downloaded and launched in the browser
+                by the bootstrapper, with QoL features and bug fixes. We
+                reverse-engineered the API and websocket responses using
+                publicly available sources, and the server code does not include
+                any code from that service.
               </span>
             </div>
             <img src={opensource} style={{ width: "200px" }} />
