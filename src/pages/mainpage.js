@@ -135,8 +135,8 @@ const MainPage = () => {
               </span>
               <span className={styles["upsell-small-print"]}>
                 *Clients coming from a specific instant messaging service are
-                not open source and are downloaded and launched in the browser
-                by the bootstrapper, with QoL features and bug fixes. We
+                not open source. Instead they are downloaded and launched in the
+                browser by the bootstrapper, with QoL features and bug fixes. We
                 reverse-engineered the API and websocket responses using
                 publicly available sources, and the server code does not include
                 any code from that service.
