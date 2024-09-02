@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 import "./background-dark.css";
 import styles from "./mainpage.module.css";
@@ -7,6 +7,14 @@ import image2015 from "../assets/images/server_settings.png";
 import image2016 from "../assets/images/november_2016.png";
 import image2017 from "../assets/images/hummus.png";
 import image2018 from "../assets/images/atsomeone.png";
+import selector from "../assets/images/selector.png";
+import simple from "../assets/images/user_profile.png";
+import atsomeone from "../assets/images/i_need_atsomeone.png";
+import opensource from "../assets/opensource.svg";
+
+const width = 200;
+const height = 150;
+const marginRight = 10;
 
 const marqueeAnimation = (width) => keyframes`
   0% {
@@ -19,15 +27,16 @@ const marqueeAnimation = (width) => keyframes`
 
 const MarqueeContent = styled.div`
   display: flex;
-  animation: ${({totalWidth}) => marqueeAnimation(totalWidth)} 15s linear infinite;
+  animation: ${({ totalWidth }) => marqueeAnimation(totalWidth)} 15s linear
+    infinite;
 `;
 
 const Image = styled.img`
-  margin-right: 10px;
-  max-width: 200px;
-  max-height: 150px;
-  min-width: 200px;
-  min-height: 150px;
+  margin-right: ${marginRight}px;
+  max-width: ${width}px;
+  max-height: ${height}px;
+  min-width: ${width}px;
+  min-height: ${height}px;
 `;
 
 const MainPage = () => {
@@ -39,7 +48,7 @@ const MainPage = () => {
   let totalWidth = 0;
 
   for (let i = 1; i <= images.length; i++) {
-    totalWidth = totalWidth + 200 + 10
+    totalWidth = totalWidth + width + marginRight;
   }
 
   return (
@@ -47,23 +56,109 @@ const MainPage = () => {
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>{randomTagline.title}</div>
-          <div className={styles["tagline-subtitle"]}>{randomTagline.subtitle}</div>
+          <div className={styles["tagline-subtitle"]}>
+            {randomTagline.subtitle}
+          </div>
         </div>
         <div className={styles["button-container"]}>
-          <span className={`button button-hurple button-pushLeft ${styles.button}`}>Get Started</span>
-          <span className={`button button-white ${styles.button}`}>Host your own Oldcord instance</span>
+          <span
+            className={`button button-hurple button-pushLeft ${styles.button}`}
+          >
+            Get Started
+          </span>
+          <span className={`button button-white ${styles.button}`}>
+            Host your own Oldcord instance
+          </span>
         </div>
         <div className={styles.marquee}>
           <MarqueeContent totalWidth={totalWidth}>
-            {images.concat(images).concat(images).map((img, index) => (
-              <Image key={index} src={img} alt={`Image ${index}`} />
-            ))}
+            {images
+              .concat(images)
+              .concat(images)
+              .map((img, index) => (
+                <Image key={index} src={img} alt={`Image ${index}`} />
+              ))}
           </MarqueeContent>
         </div>
       </div>
       <div className={styles.upsell}>
-        <div className={styles["upsell-content"]}>
-          Oldcord is better
+        <div className={styles["upsell-section-white"]}>
+          <div className={styles["upsell-section-content"]}>
+            <img src={selector} />
+            <div>
+              <span className={styles["upsell-title"]}>
+                Select your own build version
+              </span>
+              <span className={styles["upsell-text"]}>
+                Want to time travel back to 2015? Try out @someone? The selector
+                allows you to go back in time and try out how the instant
+                messaging service change over time.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className={styles["upsell-section-dark"]}>
+          <div className={styles["upsell-section-content"]}>
+            <div>
+              <span className={styles["upsell-title"]}>Simplier is better</span>
+              <span className={styles["upsell-text"]}>
+                You tired of clicking on user profiles makes you go blind? Or
+                maybe those profile picture decorations makes you sick? Now you
+                don't have to see eye candy stuff when you use Oldcord!
+              </span>
+            </div>
+            <img src={simple} />
+          </div>
+        </div>
+        <div className={styles["upsell-section-white"]}>
+          <div className={styles["upsell-section-content"]}>
+            <img src={atsomeone} />
+            <div>
+              <span className={styles["upsell-title"]}>
+                Welcome to the marketing page
+              </span>
+              <span className={styles["upsell-text"]}>
+                Help I've fallen and I cannot get up I need @someone!
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className={styles["upsell-section-dark"]}>
+          <div className={styles["upsell-section-content"]}>
+            <div>
+              <span className={styles["upsell-title"]}>Take back control</span>
+              <span className={styles["upsell-text"]}>
+                Do you feel like wanting to know how managing a instant
+                messaging service feels like? Oldcord is free and open source*,
+                and that means you can start your own Oldcord instance in no
+                time!
+              </span>
+              <span className={styles["upsell-small-print"]}>
+                * Clients coming from a certain instant messaging service are
+                not open source and do not come with the server code. They are
+                downloaded and launched within the browser by the bootstraper
+                and are modified to add QoL features and bug fixes. We reverse
+                engineered the API and websocket responses using publicly
+                available sources.
+              </span>
+            </div>
+            <img src={opensource} style={{ width: "200px" }} />
+          </div>
+        </div>
+        <div className={styles["upsell-section-dark"]}>
+          <div className={styles["upsell-section-use-now"]}>
+            <span className={styles["upsell-title"]}>
+              Use Oldcord now puhhhlease!
+            </span>
+            <span className={styles["upsell-text"]}>
+              Experience non-bloat messaging nostalgia!
+            </span>
+            <span
+              className={`button button-hurple ${styles.button} ${styles["upsell-button"]}`}
+            >
+              Get Started
+            </span>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .header {
   margin-top: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   max-width: 80%;
@@ -48,17 +48,6 @@
   min-width: 200px;
 }
 
-.upsell {
-  background-color: white;
-  color: black;
-}
-
-.upsell-content {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .marquee {
   margin-top: 40px;
   overflow: hidden;
@@ -93,4 +82,74 @@
   position: absolute;
   width: 100px;
   z-index: 1;
+}
+
+.upsell {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.upsell-section-content {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.upsell-section-content img {
+  height: auto;
+  width: 600px;
+  max-width: 600px;
+  margin: 100px;
+}
+
+.upsell-section-content div {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+}
+
+.upsell-section-white {
+  background-color: white;
+}
+
+.upsell-section-dark {
+  background-color: #f3f8fd;
+}
+
+.upsell-section-use-now {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.upsell-title {
+  color: #06152a;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.upsell-text {
+  color: #06152a;
+  font-weight: 450;
+  font-size: 20px;
+}
+
+.upsell-small-print {
+  color: #06152a;
+  font-weight: 275;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.upsell-button {
+  margin-top: 25px;
 }
