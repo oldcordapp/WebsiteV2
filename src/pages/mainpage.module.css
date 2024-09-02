@@ -1,0 +1,96 @@
+.header {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tagline-container {
+  flex-direction: column;
+}
+
+.tagline-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.tagline-subtitle {
+  color: #7a8d9f;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+@keyframes button-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  animation: button-fade-in 0.625s ease;
+  opacity: 1;
+}
+
+.button {
+  padding: 15px 50px;
+  min-width: 200px;
+}
+
+.upsell {
+  background-color: white;
+  color: black;
+}
+
+.upsell-content {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marquee {
+  margin-top: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  rotate: -2deg;
+}
+
+.marquee::before {
+  left: 0;
+  top: 0;
+}
+
+.marquee::after {
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.marquee::before,
+.marquee::after {
+  background: linear-gradient(
+    to right,
+    #06152a 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  pointer-events: none;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+}

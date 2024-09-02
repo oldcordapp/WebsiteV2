@@ -1,19 +1,15 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
+
+import styles from './notice.module.css';
 
 const Notice = () => {
   const [showNotice, setShowNotice] = useState(false);
 
   useEffect(() => {
     const checkApiStatus = async () => {
-      try {
-        const response = await fetch("https://staging.oldcordapp.com/api");
-        
-        if (response.status !== 200 || response.status !== 302) {
-            setShowNotice(true);
-        }
-      } catch (error) {
-        console.error("Error fetching the API:", error);
+      const response = await fetch("https://staging.oldcordapp.com/api");
 
+      if (response.status !== 200) {
         setShowNotice(true);
       }
     };
@@ -27,8 +23,9 @@ const Notice = () => {
 
   if (showNotice) {
     return (
-      <div className="notice">
-        Main instance is currently experiencing problems. Please wait until it's resolved.
+      <div className={styles.content}>
+        Instance is currently experiencing problems. Please wait until it's
+        resolved. Join our Discord server in the meantime.
       </div>
     );
   }
