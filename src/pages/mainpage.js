@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
 import "./background-dark.css";
@@ -39,9 +40,16 @@ const Image = styled.img`
   min-height: ${height}px;
 `;
 
-const MainPage = () => {
-  const randomIndex = Math.floor(Math.random() * taglines.length);
-  const randomTagline = taglines[randomIndex];
+const MainPage = ({ onGetStarted }) => {
+  const [randomTagline, setRandomTagline] = useState({
+    title: "",
+    subtitle: "",
+  });
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * taglines.length);
+    setRandomTagline(taglines[randomIndex]);
+  }, []);
 
   const images = [image2015, image2016, image2017, image2018];
 
@@ -63,6 +71,7 @@ const MainPage = () => {
         <div className={styles["button-container"]}>
           <span
             className={`button button-hurple button-pushLeft ${styles.button}`}
+            onClick={onGetStarted}
           >
             Get Started
           </span>
@@ -90,9 +99,10 @@ const MainPage = () => {
                 Select your own build version
               </span>
               <span className={styles["upsell-text"]}>
-                Want to time travel back to 2015? Try out @someone? The selector
-                allows you to go back in time and try out how the instant
-                messaging service change over time.
+                Looking to take a trip back to 2015? Eager to explore April
+                Fools' features like @someone? The selector lets you rewind time
+                and experience how the instant messaging service you love has
+                evolved over the years.
               </span>
             </div>
           </div>
@@ -102,9 +112,10 @@ const MainPage = () => {
             <div>
               <span className={styles["upsell-title"]}>Simplier is better</span>
               <span className={styles["upsell-text"]}>
-                You tired of clicking on user profiles makes you go blind? Or
-                maybe those profile picture decorations makes you sick? Now you
-                don't have to see eye candy stuff when you use Oldcord!
+                Are you fed up with clicking on user profiles that make your
+                eyes go blind? Or perhaps those flashy profile picture
+                decorations make you want to gag? With Oldcord, you can finally
+                enjoy a clutter-free experience without all that eye candy!
               </span>
             </div>
             <img src={simple} />
@@ -128,14 +139,13 @@ const MainPage = () => {
             <div>
               <span className={styles["upsell-title"]}>Take back control</span>
               <span className={styles["upsell-text"]}>
-                Do you feel like wanting to know how managing a instant
-                messaging service feels like? Oldcord is free and open source*,
-                and that means you can start your own Oldcord instance in no
-                time!
+                Curious about what it’s like to manage an instant messaging
+                service? Oldcord is free and open source*, allowing you to set
+                up your own Oldcord instance in no time!
               </span>
               <span className={styles["upsell-small-print"]}>
-                *Clients coming from a specific instant messaging service are
-                not open source. Instead they are downloaded and launched in the
+                *Clients coming from a certain instant messaging service are not
+                open source. Instead they are downloaded and launched in the
                 browser by the bootstrapper, with QoL features and bug fixes. We
                 reverse-engineered the API and websocket responses using
                 publicly available sources, and the server code does not include
@@ -155,6 +165,7 @@ const MainPage = () => {
             </span>
             <span
               className={`button button-hurple ${styles.button} ${styles["upsell-button"]}`}
+              onClick={onGetStarted}
             >
               Get Started
             </span>

@@ -28,3 +28,7 @@ body {
   background-color: #1f6ad3;
   color: #fff;
 }
+
+.fade {
+  opacity: 0.5;
+}

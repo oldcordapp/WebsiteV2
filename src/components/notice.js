@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import styles from './notice.module.css';
+import styles from "./notice.module.css";
 
 const Notice = () => {
   const [showNotice, setShowNotice] = useState(false);
