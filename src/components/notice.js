@@ -8,7 +8,7 @@ const Notice = () => {
       try {
         const response = await fetch("https://staging.oldcordapp.com/api");
         
-        if (response.status === 502) {
+        if (response.status !== 200 || response.status !== 302) {
             setShowNotice(true);
         }
       } catch (error) {
