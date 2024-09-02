@@ -53,7 +53,7 @@ const DialogBox = ({
             className={`button ${styles.button} ${!isChecked ? "button-disabled" : "button-hurple"}`}
             onClick={handleOpenSelector}
           >
-            Open Selector
+            Go to selector
           </span>
         </div>
       </div>
