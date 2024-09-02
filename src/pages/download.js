@@ -20,13 +20,21 @@ const Download = () => {
             <span
               className={`button button-hurple ${styles.button} ${styles["download-button"]}`}
             >
-              <a href="https://staging.oldcordapp.com/api/download?platform=win">Download now</a>
+              <span
+                className={`button ${styles.button} ${
+                  styles["download-button"]
+                } ${"button-disabled"}`}
+              >
+                Down for updating.
+              </span>
             </span>
           </div>
           <div className={`${styles["download-section-content-os"]}`}>
             <span className={styles["download-title"]}>macOS</span>
             <span
-              className={`button ${styles.button} ${styles["download-button"]} ${"button-disabled"}`}
+              className={`button ${styles.button} ${
+                styles["download-button"]
+              } ${"button-disabled"}`}
             >
               Coming soon
             </span>
@@ -34,7 +42,9 @@ const Download = () => {
           <div className={styles["download-section-content-os"]}>
             <span className={styles["download-title"]}>Linux</span>
             <span
-              className={`button ${styles.button} ${styles["download-button"]} ${"button-disabled"}`}
+              className={`button ${styles.button} ${
+                styles["download-button"]
+              } ${"button-disabled"}`}
             >
               Coming soon
             </span>
