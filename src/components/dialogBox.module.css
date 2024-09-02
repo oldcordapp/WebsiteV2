@@ -57,6 +57,12 @@
   border: #1f6ad3;
 }
 
+.button:disabled {
+  background-color: #CDD4DB;
+  color: #7a8d9f;
+  cursor: not-allowed;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
