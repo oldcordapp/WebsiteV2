@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
-import "./background-dark.css";
 import styles from "./mainpage.module.css";
 import taglines from "../assets/taglines.json";
 import image2015 from "../assets/images/server_settings.png";
@@ -64,7 +63,7 @@ const MainPage = ({ onGetStarted }) => {
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>{randomTagline.title}</div>
-          <div className={styles["tagline-subtitle"]}>
+          <div className={`${styles["tagline-subtitle"]} text-dark-gray`}>
             {randomTagline.subtitle}
           </div>
         </div>
@@ -76,7 +75,7 @@ const MainPage = ({ onGetStarted }) => {
             Get Started
           </span>
           <span className={`button button-white ${styles.button}`}>
-            Host your own Oldcord instance
+            <a href="https://github.com/oldcordapp/OldCordV3">Host your own Oldcord instance</a>
           </span>
         </div>
         <div className={styles.marquee}>

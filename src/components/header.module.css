@@ -44,15 +44,12 @@
   transition: color 0.25s, border 0.25s, fill 0.25s;
   will-change: color, border, fill;
   cursor: pointer;
-  color: #7a8d9f;
-  fill: #7a8d9f;
-  text-decoration: none;
   align-content: center;
 }
 
-.list-item:hover {
-  color: white;
-  fill: white;
+.list-item a {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .list-item-socials {
@@ -69,13 +66,32 @@
 }
 
 .open-button {
-  color: #7a8d9f;
   top: 0;
-  border: 2px solid #7a8d9f;
   padding: 5px 17px 7px;
   border-radius: 20px;
   line-height: 24px;
   margin-left: 5px;
+}
+
+.text-light-gray .list-item {
+  fill: #c7cfd7;
+}
+
+.text-light-gray .open-button {
+  border: 2px solid #c7cfd7;
+}
+
+.text-dark-gray .list-item {
+  fill: #7a8d9f;
+}
+
+.text-dark-gray .open-button {
+  border: 2px solid #7a8d9f;
+}
+
+.list-item:hover {
+  color: white;
+  fill: white;
 }
 
 .open-button:hover {

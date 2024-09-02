@@ -29,12 +29,16 @@
 }
 
 .navigation-link {
-  color: #7a8d9f;
   transition: color 0.25s;
   will-change: color;
   font-size: 14px;
   line-height: 20px;
   cursor: pointer;
+}
+
+.navigation-link a {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .navigation-link:hover {
@@ -71,7 +75,6 @@
 }
 
 .upsell-text-subtitle {
-  color: #7a8d9f;
   font-size: 18px;
   font-weight: 500;
   margin-top: 5px;
@@ -82,7 +85,6 @@
 }
 
 .notice {
-  color: #7a8d9f;
   font-size: 12px;
   font-weight: 500;
   display: flex;

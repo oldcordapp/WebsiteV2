@@ -19,7 +19,6 @@
 }
 
 .tagline-subtitle {
-  color: #7a8d9f;
   font-size: 20px;
   margin-top: 5px;
 }
@@ -46,6 +45,12 @@
 .button {
   padding: 15px 50px;
   min-width: 200px;
+}
+
+.button:disabled {
+  background-color: #cdd4db;
+  color: #7a8d9f;
+  cursor: not-allowed;
 }
 
 .marquee {
@@ -87,7 +92,6 @@
 .upsell {
   display: flex;
   flex-direction: column;
-  color: black;
 }
 
 .upsell-section-content {

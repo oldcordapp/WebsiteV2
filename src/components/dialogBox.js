@@ -30,11 +30,12 @@ const DialogBox = ({
           </span>
         </div>
         <span className={styles.subtitle}>
-          Oldcord is still being worked on and features might be missing/buggy.
+          Oldcord is still under development, so some features may be incomplete
+          or have bugs.
           <span className={styles.bold}>
             {" "}
-            Complaining would not help accelerate fixes faster, just makes you
-            look like an asshole and we will not tolerate the behaviour.
+            Complaining won't speed up fixes; it only reflects poorly on you,
+            and we won't accept that kind of behavior.
           </span>
         </span>
         <div className={styles["i-understand"]}>
@@ -44,19 +45,16 @@ const DialogBox = ({
               checked={isChecked}
               onChange={handleCheckboxChange}
             />
-            <span className={styles.checkmark} />I understand and will report
-            issues as constructive as possible. Complaining will get my account
-            banned without appeals.
+            <span className={styles.checkmark} />I understand and will report issues as constructively as possible. Complaining may result in my account being banned without the possibility of appeal.
           </label>
         </div>
         <div className={styles["button-container"]}>
-          <button
-            className={`button button-hurple ${styles.button}`}
+          <span
+            className={`button ${styles.button} ${!isChecked ? "button-disabled" : "button-hurple"}`}
             onClick={handleOpenSelector}
-            disabled={!isChecked}
           >
             Open Selector
-          </button>
+          </span>
         </div>
       </div>
     </div>

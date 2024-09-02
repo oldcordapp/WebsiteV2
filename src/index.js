@@ -1,23 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Cookies from 'js-cookie';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import Cookies from "js-cookie";
 
 import "./index.css";
 import Header from "./components/header.js";
 import Notice from "./components/notice.js";
 import Footer from "./components/footer.js";
+import DialogBox from "./components/dialogBox.js";
 
 import MainPage from "./pages/mainpage.js";
-import DialogBox from "./components/dialogBox.js";
+import Download from "./pages/download.js";
 
 const App = () => {
   const [isDialogOpen, setDialogOpen] = useState(false);
   const [isChecked, setChecked] = useState(false);
+  const [textColorClass, setTextColorClass] = useState("");
 
   const handleGetStarted = () => {
-    const shouldSkipDialog = Cookies.get('skip-dialog');
-    if (shouldSkipDialog === 'true') {
+    const shouldSkipDialog = Cookies.get("skip-dialog");
+    if (shouldSkipDialog === "true") {
       window.location.href = "https://staging.oldcordapp.com/selector";
     } else {
       setDialogOpen(true);
@@ -37,17 +44,34 @@ const App = () => {
     window.location.href = "https://staging.oldcordapp.com/selector";
   };
 
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    document.body.className = '';
+    setTextColorClass(""); // Reset text color class
+
+    switch (path) {
+      case "/":
+        document.body.classList.add("bg-dark");
+        setTextColorClass("text-dark-gray");
+        break;
+      case "/download":
+        document.body.classList.add("bg-hurple");
+        setTextColorClass("text-light-gray");
+        break;
+    }
+  }, [location.pathname]);
+
   return (
     <>
-      <Header onGetStarted={handleGetStarted} />
+      <Header onGetStarted={handleGetStarted} textColorClass={textColorClass} />
       <Notice />
       <Routes>
-        <Route
-          path="/"
-          element={<MainPage onGetStarted={handleGetStarted} />}
-        />
+        <Route path="/" element={<MainPage onGetStarted={handleGetStarted} />} />
+        <Route path="/download" element={<Download />} />
       </Routes>
-      <Footer onGetStarted={handleGetStarted} />
+      <Footer onGetStarted={handleGetStarted} textColorClass={textColorClass} />
       <DialogBox
         isOpen={isDialogOpen}
         onClose={handleCloseDialog}

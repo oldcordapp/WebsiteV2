@@ -54,13 +54,6 @@
 .button {
   padding: 10px;
   width: 100%;
-  border: #1f6ad3;
-}
-
-.button:disabled {
-  background-color: #CDD4DB;
-  color: #7a8d9f;
-  cursor: not-allowed;
 }
 
 .header {
@@ -94,8 +87,8 @@
 .checkmark {
   min-height: 20px;
   min-width: 20px;
-  background-color: #F3F8FD;
-  border: 2px solid #DDEBF9;
+  background-color: #f3f8fd;
+  border: 2px solid #ddebf9;
   border-radius: 0;
   margin-right: 10px;
   display: flex;
@@ -118,7 +111,7 @@
   height: 10px;
   border: solid white;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg) translateY(6px) translateX(10px);
+  transform: rotate(45deg) translateY(14px) translateX(18px);
 }
 
 .checkbox input:checked + .checkmark:after {

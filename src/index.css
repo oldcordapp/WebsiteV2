@@ -3,6 +3,27 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  transition: background-color 0.3s;
+}
+
+.bg-hurple {
+  background-color: #1f6ad3;
+  color: white;
+}
+
+.bg-dark {
+  background-color: #06152a;
+  color: white;
+}
+
+.text-light-gray {
+  color: #c7cfd7;
+  fill: #c7cfd7;
+}
+
+.text-dark-gray {
+  color: #7a8d9f;
+  fill: #7a8d9f;
 }
 
 .button {
@@ -12,7 +33,17 @@ body {
   cursor: pointer;
   user-select: none;
   text-align: center;
+}
+
+.button-disabled {
+  background-color: #cdd4db;
+  color: #7a8d9f;
+  cursor: not-allowed;
+}
+
+.button a {
   text-decoration: none;
+  color: inherit;
 }
 
 .button-pushLeft {
@@ -26,6 +57,11 @@ body {
 
 .button-hurple {
   background-color: #1f6ad3;
+  color: #fff;
+}
+
+.text-light-gray .button-hurple {
+  background-color: #1f46d3;
   color: #fff;
 }
 
