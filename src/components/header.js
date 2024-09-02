@@ -11,7 +11,7 @@ const Header = ({ onGetStarted, textColorClass }) => {
   return (
     <div className={styles.section}>
       <div className={styles.inner}>
-        <Link to="/"><Logo className={styles.logo} /></Link>
+        <Link to="/" className={styles["logo-link"]}><Logo className={styles.logo} /></Link>
         <ul className={`${styles.navigation} ${textColorClass} ${styles[textColorClass]}`}>
           <li className={`${styles["list-item"]} ${styles["list-item-push-left"]}`}>
             <Link to="download">Download</Link>
