@@ -35,7 +35,7 @@ const Terms = () => {
             </li>
             <li className={styles.text}>
               <span className={styles.bold}>"Instance"</span> refers to our
-              hosted version of Oldcorrd.
+              hosted version of Oldcord.
             </li>
             <li className={styles.text}>
               <span className={styles.bold}>"Services"</span> refers to both the
