@@ -45,8 +45,10 @@ const DialogBox = ({
             and we won't accept that kind of behavior.
           </span>
         </span>
-        <span className={styles.subtitle} style={{ marginBottom: '20px' }}>
-          Please also read the <a href="/terms">T&C</a>, <a href="/privacy">Privacy Policy</a> and <a href="/guidelines">Instance Guidelines</a>.
+        <span className={styles.subtitle} style={{ marginBottom: "20px" }}>
+          Please also read the <a href="/terms">T&C</a>,{" "}
+          <a href="/privacy">Privacy Policy</a> and{" "}
+          <a href="/guidelines">Instance Guidelines</a>.
         </span>
         <div className={styles["i-understand"]}>
           <label className={styles.checkbox}>
@@ -55,25 +57,38 @@ const DialogBox = ({
               checked={isChecked}
               onChange={handleCheckboxChange}
             />
-            <span className={styles.checkmark} />
-            I understand and will report issues as constructively as possible. Complaining may result in my account being banned without the possibility of appeal.
+            <span className={styles.checkmark} />I understand and will report
+            issues as constructively as possible. Complaining may result in my
+            account being banned without the possibility of appeal.
           </label>
         </div>
-        <div className={styles["i-understand"]} style={{ marginBottom: '20px' }}>
+        <div
+          className={styles["i-understand"]}
+          style={{ marginBottom: "20px" }}
+        >
           <label className={styles.checkbox}>
             <input
               type="checkbox"
               checked={isCheckedSecond}
               onChange={handleSecondCheckboxChange}
             />
-            <span className={styles.checkmark} />
-            I have read the T&C, Privacy Policy and Instance Guidelines.
+            <span className={styles.checkmark} />I have read the T&C, Privacy
+            Policy and Instance Guidelines.
           </label>
         </div>
         <div className={styles["button-container"]}>
           <span
-            className={`button ${styles.button} ${!(isChecked && isCheckedSecond) ? "button-disabled" : "button-hurple"}`}
-            onClick={handleOpenSelector}
+            className={`button ${styles.button} ${
+              !(isChecked && isCheckedSecond)
+                ? "button-disabled"
+                : "button-hurple"
+            }`}
+            onClick={
+              !(isChecked && isCheckedSecond) ? null : handleOpenSelector
+            }
+            style={{
+              pointerEvents: !(isChecked && isCheckedSecond) ? "none" : "auto",
+            }}
           >
             Go to selector
           </span>
