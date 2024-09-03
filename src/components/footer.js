@@ -23,9 +23,9 @@ const Footer = ({ onGetStarted, textColorClass }) => {
             <span className={styles["navigation-header"]}>
               Instance-related
             </span>
-            <span className={styles["navigation-link"]}>Terms</span>
-            <span className={styles["navigation-link"]}>Privacy Policy</span>
-            <span className={styles["navigation-link"]}>Guidelines</span>
+            <span className={styles["navigation-link"]}><Link to="terms">Terms</Link></span>
+            <span className={styles["navigation-link"]}><Link to="privacy">Privacy Policy</Link></span>
+            <span className={styles["navigation-link"]}><Link to="guidelines">Guidelines</Link></span>
             <span className={styles["navigation-link"]}>Status</span>
           </div>
           <div className={styles["navigation-section"]}>

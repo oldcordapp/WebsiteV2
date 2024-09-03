@@ -16,6 +16,9 @@ import DialogBox from "./components/dialogBox.js";
 
 import MainPage from "./pages/mainpage.js";
 import Download from "./pages/download.js";
+import Terms from "./pages/terms.js";
+import Privacy from "./pages/privacy.js";
+import Guidelines from "./pages/guidelines.js";
 
 const App = () => {
   const [isDialogOpen, setDialogOpen] = useState(false);
@@ -57,6 +60,9 @@ const App = () => {
         setTextColorClass("text-dark-gray");
         break;
       case "/download":
+      case "/terms":
+      case "/privacy":
+      case "/guidelines":
         document.body.classList.add("bg-hurple");
         setTextColorClass("text-light-gray");
         break;
@@ -70,6 +76,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<MainPage onGetStarted={handleGetStarted} />} />
         <Route path="/download" element={<Download />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/guidelines" element={<Guidelines />} />
       </Routes>
       <Footer onGetStarted={handleGetStarted} textColorClass={textColorClass} />
       <DialogBox
