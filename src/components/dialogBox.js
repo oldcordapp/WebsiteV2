@@ -1,6 +1,6 @@
 import styles from "./dialogBox.module.css";
 import Cookies from "js-cookie";
-import { useState } from "react"; // Import useState
+import { useState } from "react";
 
 const DialogBox = ({
   isOpen,
@@ -9,7 +9,7 @@ const DialogBox = ({
   isChecked,
   onOpenSelector,
 }) => {
-  const [isCheckedSecond, setIsCheckedSecond] = useState(false); // State for the second checkbox
+  const [isCheckedSecond, setIsCheckedSecond] = useState(false);
 
   const handleCheckboxChange = (event) => {
     const checked = event.target.checked;
@@ -17,7 +17,7 @@ const DialogBox = ({
   };
 
   const handleSecondCheckboxChange = (event) => {
-    setIsCheckedSecond(event.target.checked); // Update the second checkbox state
+    setIsCheckedSecond(event.target.checked);
   };
 
   const handleOpenSelector = () => {
