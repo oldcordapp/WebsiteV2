@@ -1,11 +1,11 @@
 import styles from "./legal.module.css";
 
-import PageTitle from '../components/pageTitle.js';
+import MetaTags from '../components/metaTags.js';
 
 const Guidelines = () => {
   return (
     <div>
-      <PageTitle title="Oldcord - Instance Guidelines"/>
+      <MetaTags title="Oldcord - Instance Guidelines"/>
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Instance Guidelines</div>

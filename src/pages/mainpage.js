@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
-import PageTitle from '../components/pageTitle.js';
+import MetaTags from '../components/metaTags.js';
 
 import styles from "./mainpage.module.css";
 import taglines from "../assets/taglines.json";
@@ -62,7 +62,7 @@ const MainPage = ({ onGetStarted }) => {
 
   return (
     <div>
-      <PageTitle title="Oldcord - late 2010s instant messaging service revival"/>
+      <MetaTags title="Oldcord - late 2010s instant messaging service revival" description="Oldcord revives the essence of late 2010s instant messaging. Relive the nostalgia of a simpler time while connecting with friends and building your own community."/>
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>{randomTagline.title}</div>

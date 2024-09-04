@@ -17,7 +17,13 @@ const Footer = ({ onGetStarted, textColorClass }) => {
           <div className={styles["navigation-section"]}>
             <span className={styles["navigation-header"]}>Oldcord-related</span>
             <span className={styles["navigation-link"]}>
+              <Link to="about">About Oldcord</Link>
+            </span>
+            <span className={styles["navigation-link"]}>
               <Link to="download">Download</Link>
+            </span>
+            <span className={styles["navigation-link"]}>
+              <Link to="thanks">Special Thanks</Link>
             </span>
           </div>
           <div className={styles["navigation-section"]}>

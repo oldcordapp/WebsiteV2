@@ -1,11 +1,11 @@
 import styles from "./legal.module.css";
 
-import PageTitle from '../components/pageTitle.js';
+import MetaTags from '../components/metaTags.js';
 
 const Privacy = () => {
   return (
     <div>
-      <PageTitle title="Oldcord - Privacy Policy"/>
+      <MetaTags title="Oldcord - Privacy Policy"/>
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Privacy Policy</div>
