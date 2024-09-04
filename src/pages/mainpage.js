@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
-import MetaTags from '../components/metaTags.js';
+import MetaTags from "../components/metaTags.js";
 
 import styles from "./mainpage.module.css";
 import taglines from "../assets/taglines.json";
@@ -62,7 +62,10 @@ const MainPage = ({ onGetStarted }) => {
 
   return (
     <div>
-      <MetaTags title="Oldcord - late 2010s instant messaging service revival" description="Oldcord revives the essence of late 2010s instant messaging. Relive the nostalgia of a simpler time while connecting with friends and building your own community."/>
+      <MetaTags
+        title="Oldcord - late 2010s instant messaging service revival"
+        description="Oldcord revives the essence of late 2010s instant messaging. Relive the nostalgia of a simpler time while connecting with friends and building your own community."
+      />
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>{randomTagline.title}</div>
@@ -77,9 +80,11 @@ const MainPage = ({ onGetStarted }) => {
           >
             Get Started
           </span>
-          <span className={`button button-white ${styles.button}`}>
-            <a href="https://github.com/oldcordapp/OldCordV3">Host your own Oldcord instance</a>
-          </span>
+          <a href="https://github.com/oldcordapp/OldCordV3" className="button-link">
+            <span className={`button button-white ${styles.button}`}>
+              Host your own Oldcord instance
+            </span>
+          </a>
         </div>
         <div className={styles.marquee}>
           <MarqueeContent totalWidth={totalWidth}>
