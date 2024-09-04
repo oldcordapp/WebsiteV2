@@ -1,8 +1,11 @@
 import styles from "./legal.module.css";
 
+import PageTitle from '../components/pageTitle.js';
+
 const Guidelines = () => {
   return (
     <div>
+      <PageTitle title="Oldcord - Instance Guidelines"/>
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Instance Guidelines</div>
@@ -196,16 +199,22 @@ const Guidelines = () => {
             <li className={styles.text}>
               <span className={styles.bold}>Illegal Activities</span>
               <br />
-              Do not engage in any other illegal activities, such as human trafficking or solicitation.
+              Do not engage in any other illegal activities, such as human
+              trafficking or solicitation.
             </li>
           </ol>
           <span className={styles.title}>Reporting Violations</span>
           <span className={styles.text}>
-          If you see any content or activity that violates these Guidelines, please report it to us. We take violations seriously and will take appropriate action.
+            If you see any content or activity that violates these Guidelines,
+            please report it to us. We take violations seriously and will take
+            appropriate action.
           </span>
           <span className={styles.title}>Evolution of Guidelines</span>
           <span className={styles.text}>
-          These Guidelines may evolve over time. We will do our best to notify you of any updates, but it is your responsibility to adhere to the spirit of these rules and help keep Oldcord a safe and enjoyable space for everyone. Thank you for your cooperation!
+            These Guidelines may evolve over time. We will do our best to notify
+            you of any updates, but it is your responsibility to adhere to the
+            spirit of these rules and help keep Oldcord a safe and enjoyable
+            space for everyone. Thank you for your cooperation!
           </span>
         </div>
       </div>

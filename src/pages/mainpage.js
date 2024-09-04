@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 
+import PageTitle from '../components/pageTitle.js';
+
 import styles from "./mainpage.module.css";
 import taglines from "../assets/taglines.json";
 import image2015 from "../assets/images/server_settings.png";
@@ -60,6 +62,7 @@ const MainPage = ({ onGetStarted }) => {
 
   return (
     <div>
+      <PageTitle title="Oldcord - late 2010s instant messaging service revival"/>
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>{randomTagline.title}</div>

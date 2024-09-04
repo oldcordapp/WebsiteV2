@@ -1,8 +1,11 @@
 import styles from "./download.module.css";
 
+import PageTitle from '../components/pageTitle.js';
+
 const Download = () => {
   return (
     <div>
+      <PageTitle title="Oldcord - Download Oldcord Desktop Client"/>
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>
