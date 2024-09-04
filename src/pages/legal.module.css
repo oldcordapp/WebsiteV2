@@ -16,11 +16,13 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
+  text-align: center;
 }
 
 .tagline-subtitle {
   font-size: 20px;
   margin-top: 5px;
+  text-align: center;
 }
 
 .button {
