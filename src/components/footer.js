@@ -84,7 +84,7 @@ const Footer = ({ onGetStarted, textColorClass }) => {
         <span
           className={`${styles.notice} ${textColorClass} ${styles[textColorClass]}`} style={{ marginTop: "0px" }}
         >
-          Some registered trademarks appear on Oldcord, and those rights (along
+          Some registered trademarks may appear on Oldcord, and those rights (along
           with others) belong to their respective owners. In short, they are not
           ours.
         </span>
