@@ -33,6 +33,10 @@ const Privacy = () => {
             creation and management:
           </span>
           <ul>
+          <li className={styles.text}>
+              <span className={styles.bold}>IP Address: </span>
+              Used to facilitate moderation, and prevent abuse on our instance.
+            </li>
             <li className={styles.text}>
               <span className={styles.bold}>Email Address: </span>Used for
               account verification and communication.
