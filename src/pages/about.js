@@ -121,9 +121,7 @@ const About = ({ onGetStarted }) => {
             Getting started with Oldcord is simple! Since we are a public
             platform, anyone can join and explore our features without needing
             an invitation. Just create an account, and you’ll be ready to
-            connect with others in the Oldcord community. You can also host your
-            own instance of Oldcord by following the README file on our GitHub
-            repository!
+            connect with others in the Oldcord community.
           </span>
           <span className={sectionStyles.text}>
             You can also host your own instance of Oldcord by following the
