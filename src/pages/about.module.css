@@ -1,0 +1,59 @@
+.header {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tagline-container {
+  flex-direction: column;
+}
+
+.tagline-logo {
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  fill: white;
+}
+
+.tagline-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.button {
+  padding: 15px 50px;
+  min-width: 200px;
+}
+
+.upsell-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.upsell-title {
+  color: #06152a;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.upsell-text {
+  color: #06152a;
+  font-weight: 450;
+  font-size: 20px;
+}
+
+.upsell-button {
+  margin-top: 25px;
+}

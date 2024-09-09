@@ -19,6 +19,10 @@ import Download from "./pages/download.js";
 import Terms from "./pages/terms.js";
 import Privacy from "./pages/privacy.js";
 import Guidelines from "./pages/guidelines.js";
+import About from "./pages/about.js";
+import Thanks from "./pages/thanks.js";
+
+import FourOhFour from "./pages/404.js";
 
 const App = () => {
   const [isDialogOpen, setDialogOpen] = useState(false);
@@ -51,7 +55,7 @@ const App = () => {
 
   useEffect(() => {
     const path = location.pathname;
-    document.body.className = '';
+    document.body.className = "";
     setTextColorClass(""); // Reset text color class
 
     switch (path) {
@@ -63,9 +67,14 @@ const App = () => {
       case "/terms":
       case "/privacy":
       case "/guidelines":
+      case "/about":
+      case "/thanks":
         document.body.classList.add("bg-hurple");
         setTextColorClass("text-light-gray");
         break;
+      default:
+        document.body.classList.add("bg-white");
+        setTextColorClass("text-black");
     }
   }, [location.pathname]);
 
@@ -74,11 +83,23 @@ const App = () => {
       <Header onGetStarted={handleGetStarted} textColorClass={textColorClass} />
       <Notice />
       <Routes>
-        <Route path="/" element={<MainPage onGetStarted={handleGetStarted} />} />
+        <Route
+          path="/"
+          element={<MainPage onGetStarted={handleGetStarted} />}
+        />
         <Route path="/download" element={<Download />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/guidelines" element={<Guidelines />} />
+        <Route
+          path="/about"
+          element={<About onGetStarted={handleGetStarted} />}
+        />
+        <Route
+          path="/thanks"
+          element={<Thanks />}
+        />
+        <Route path="*" element={<FourOhFour />} />
       </Routes>
       <Footer onGetStarted={handleGetStarted} textColorClass={textColorClass} />
       <DialogBox

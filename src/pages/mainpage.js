@@ -12,7 +12,7 @@ import image2018 from "../assets/images/atsomeone.png";
 import selector from "../assets/images/selector.png";
 import simple from "../assets/images/user_profile.png";
 import atsomeone from "../assets/images/i_need_atsomeone.png";
-import opensource from "../assets/opensource.svg";
+import { ReactComponent as OpenSource } from "../assets/opensource.svg";
 
 const width = 200;
 const height = 150;
@@ -159,7 +159,7 @@ const MainPage = ({ onGetStarted }) => {
                 any code from that service.
               </span>
             </div>
-            <img src={opensource} style={{ width: "200px" }} />
+            <OpenSource style={{ width: "550px", fill: "#06152a", color: "#06152a", paddingRight: "100px" }}/>
           </div>
         </div>
         <div className={styles["upsell-section-dark"]}>

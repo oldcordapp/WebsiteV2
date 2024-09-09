@@ -1,0 +1,62 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.section-content {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.title {
+  color: #06152a;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+
+.subtitle {
+  color: #06152a;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 44px;
+}
+
+.text {
+  color: #06152a;
+  font-weight: 450;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+li.text {
+  margin-bottom: 0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.section ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.section hr {
+  margin-top: 20px;
+  border: 1px solid #c7cfd7;
+  width: 100%;
+}
+
+ol .title {
+  margin-left: 0;
+}

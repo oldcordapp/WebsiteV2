@@ -1,0 +1,79 @@
+@import url("https://api.fonts.coollabs.io/css2?family=Press+Start+2P&display=swap");
+
+.header {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Press Start 2P", cursive;
+}
+
+.tagline-container {
+  flex-direction: column;
+}
+
+.tagline-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.tagline-subtitle {
+  font-size: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.list {
+  margin: 20px 0;
+}
+
+.thanks-section {
+  font-family: "Press Start 2P", cursive;
+}
+
+.scrollable-lists {
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.scrollable-content {
+  position: absolute;
+  animation: scroll-up 10s linear infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.scrollable-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.text-small {
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}

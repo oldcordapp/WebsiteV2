@@ -6,6 +6,7 @@
   height: 90px;
   position: relative;
   width: 100%;
+  align-content: center;
 }
 
 .inner {
@@ -23,7 +24,6 @@
 }
 
 .logo {
-  fill: white;
   height: 25px;
 }
 
@@ -99,12 +99,34 @@
   border: 2px solid #7a8d9f;
 }
 
-.list-item:hover,
-.list-item-socials:hover {
+.text-black .list-item,
+.text-black .list-item-socials {
+  color: #06152a;
+  fill: #06152a;
+}
+
+.text-light-gray .logo,
+.text-dark-gray .logo {
+  fill: white
+}
+
+.text-black .logo {
+  fill: #06152a
+}
+
+.text-black .open-button {
+  border: 2px solid #06152a;
+}
+
+.text-light-gray .list-item:hover,
+.text-light-gray .list-item-socials:hover,
+.text-dark-gray .list-item:hover,
+.text-dark-gray .list-item-socials:hover {
   color: white;
   fill: white;
 }
 
-.open-button:hover {
+.text-light-gray .open-button:hover,
+.text-dark-gray .open-button:hover {
   border: 2px solid white;
 }

@@ -15,6 +15,11 @@ body {
   color: white;
 }
 
+.bg-white {
+  background-color: white;
+  color: #06152a;
+}
+
 .text-light-gray {
   color: #c7cfd7;
   fill: #c7cfd7;
@@ -23,6 +28,11 @@ body {
 .text-dark-gray {
   color: #7a8d9f;
   fill: #7a8d9f;
+}
+
+.text-black {
+  color: #06152a;
+  fill: #06152a;
 }
 
 .button {
