@@ -9,7 +9,7 @@ import MetaTags from "../components/metaTags.js";
 const FourOhFour = () => {
   return (
     <div>
-      <MetaTags title="Oldcord - Not Found" />
+      <MetaTags title="Oldcord - Not Found" description="" />
       <div className={styles.section}>
         <div className={styles["section-content"]}>
           <span className={styles.title}>
