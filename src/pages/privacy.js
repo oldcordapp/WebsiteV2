@@ -1,11 +1,11 @@
 import styles from "./legal.module.css";
 
-import MetaTags from '../components/metaTags.js';
+import MetaTags from "../components/metaTags.js";
 
 const Privacy = () => {
   return (
     <div>
-      <MetaTags title="Oldcord - Privacy Policy"/>
+      <MetaTags title="Oldcord - Privacy Policy" />
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Privacy Policy</div>
@@ -54,12 +54,22 @@ const Privacy = () => {
               <span className={styles.bold}>User ID: </span>A randomly generated
               identifier unique to your account.
             </li>
+            <li className={styles.text}>
+              <span className={styles.bold}>IP Address: </span>Recorded upon
+              account registration and each time you log in. This information is
+              used solely for moderation purposes to combat abuse and spam.
+            </li>
           </ul>
           <span className={styles.subtitle}>Cookies</span>
           <span className={styles.text}>
             We use essential cookies to improve your experience. These cookies
             help us remember if you have skipped the dialog box or made a build
             selection. We do not use cookies for advertising purposes.
+          </span>
+          <span className={styles.subtitle}>Captcha</span>
+          <span className={styles.text}>
+            We implement a captcha during the registration process to enhance
+            security and prevent automated abuse.
           </span>
           <span className={styles.title}>Information We Do Not Collect</span>
           <span className={styles.text}>We do not collect or store:</span>
@@ -82,6 +92,9 @@ const Privacy = () => {
             </li>
             <li className={styles.text}>
               To ensure the security and integrity of our services
+            </li>
+            <li className={styles.text}>
+              To monitor and prevent abuse and spam on our platform
             </li>
           </ul>
           <span className={styles.title}>Data Retention and Deletion</span>
