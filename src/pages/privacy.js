@@ -34,8 +34,9 @@ const Privacy = () => {
           </span>
           <ul>
           <li className={styles.text}>
-              <span className={styles.bold}>IP Address: </span>
+              <span className={styles.bold}>IP Addresses: </span>
               Used to facilitate moderation, and prevent abuse on our instance.
+              Collected on account registration and login.
             </li>
             <li className={styles.text}>
               <span className={styles.bold}>Email Address: </span>Used for
@@ -63,7 +64,6 @@ const Privacy = () => {
           <span className={styles.title}>Information We Do Not Collect</span>
           <span className={styles.text}>We do not collect or store:</span>
           <ul>
-            <li className={styles.text}>IP addresses</li>
             <li className={styles.text}>Phone numbers</li>
             <li className={styles.text}>Any sensitive personal data</li>
             <li className={styles.text}>
