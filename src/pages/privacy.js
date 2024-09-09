@@ -11,7 +11,7 @@ const Privacy = () => {
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Privacy Policy</div>
           <div className={`${styles["tagline-subtitle"]} text-light-gray`}>
-            Last Updated: September 9th, 2024 | Effective: (Not yet decided)
+            Last Updated: September 9th, 2024 | Effective: September 10th, 2024
           </div>
         </div>
       </div>
