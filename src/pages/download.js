@@ -5,7 +5,7 @@ import MetaTags from '../components/metaTags.js';
 const Download = () => {
   return (
     <div>
-      <MetaTags title="Oldcord - Download Oldcord Desktop Client" description="Download Oldcord Desktop Client to use Oldcord on your desktop. Great for use."/>
+      <MetaTags title="Oldcord — Download Oldcord Desktop Client" description="Download Oldcord Desktop Client to use Oldcord on your desktop. Great for use."/>
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>

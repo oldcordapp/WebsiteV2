@@ -6,7 +6,7 @@ import MetaTags from "../components/metaTags.js";
 const Thanks = () => {
   return (
     <div>
-      <MetaTags title="Oldcord - Special Thanks" />
+      <MetaTags title="Oldcord — Special Thanks" />
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={`${styles["tagline-title"]}`}>Special Thanks!</div>

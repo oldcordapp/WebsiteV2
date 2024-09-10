@@ -65,7 +65,7 @@ const MainPage = ({ onGetStarted }) => {
   return (
     <div>
       <MetaTags
-        title="Oldcord - late 2010s instant messaging service revival"
+        title="Oldcord — Late 2010s instant messaging service revival"
         description="Oldcord revives the essence of late 2010s instant messaging. Relive the nostalgia of a simpler time while connecting with friends and building your own community."
       />
       <div className={styles.header}>

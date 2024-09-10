@@ -6,7 +6,7 @@ import MetaTags from "../components/metaTags.js";
 const Privacy = () => {
   return (
     <div>
-      <MetaTags title="Oldcord - Privacy Policy" />
+      <MetaTags title="Oldcord — Privacy Policy" />
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Privacy Policy</div>

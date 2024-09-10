@@ -9,7 +9,7 @@ const About = ({ onGetStarted }) => {
   return (
     <div>
       <MetaTags
-        title="Oldcord - About"
+        title="Oldcord — About"
         description="Find out what we do on Oldcord and how we do it here."
       />
       <div className={styles.header}>
