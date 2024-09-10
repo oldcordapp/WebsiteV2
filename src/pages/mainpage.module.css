@@ -103,7 +103,8 @@
   align-items: center;
 }
 
-.upsell-section-content img {
+.upsell-section-content img,
+.upsell-section-content svg {
   height: auto;
   width: 600px;
   max-width: 600px;

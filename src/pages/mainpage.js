@@ -161,7 +161,7 @@ const MainPage = ({ onGetStarted }) => {
                 any code from that service.
               </span>
             </div>
-            <OpenSource style={{ width: "550px", fill: "#06152a", color: "#06152a", paddingRight: "100px" }}/>
+            <OpenSource style={{ color: "#06152a"}}/>
           </div>
         </div>
         <div className={styles["upsell-section-dark"]}>
