@@ -132,7 +132,7 @@ const About = ({ onGetStarted }) => {
           <span className={sectionStyles.text}>
             Getting started with Oldcord is simple! Since we are a public
             platform, anyone can join and explore our features without needing
-            an invitation. Just create an account, and you’ll be ready to
+            an invitation. Just create an account, and you'll be ready to
             connect with others in the Oldcord community.
           </span>
           <span className={sectionStyles.text}>
