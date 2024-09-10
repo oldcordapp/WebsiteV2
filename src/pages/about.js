@@ -142,9 +142,9 @@ const About = ({ onGetStarted }) => {
             className={styles["upsell-section"]}
             style={{ marginTop: "10px" }}
           >
-            <span className={styles["upsell-title"]}>
-              That's it. We are Oldcord.
-            </span>
+            <div className={styles["upsell-title"]}>
+              That's it. We are <Logo />.
+            </div>
             <span className={styles["upsell-text"]}>
               Convinced? Use Oldcord now and experience the nostalgia!
             </span>

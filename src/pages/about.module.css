@@ -48,6 +48,19 @@
   font-size: 30px;
   line-height: 44px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  height: max-content;
+}
+
+.upsell-title svg {
+  min-width: 32%;
+  width: 32%;
+  margin-left: 10px;
+  transform: translateY(2.5px);
 }
 
 .upsell-text {
