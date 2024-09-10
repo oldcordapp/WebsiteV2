@@ -47,12 +47,14 @@
   font-weight: 700;
   font-size: 30px;
   line-height: 44px;
+  text-align: center;
 }
 
 .upsell-text {
   color: #06152a;
   font-weight: 450;
   font-size: 20px;
+  text-align: center;
 }
 
 .upsell-button {

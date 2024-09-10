@@ -33,20 +33,20 @@ const FourOhFour = () => {
               <Link to="/" className={styles.bold}>
                 Home{" "}
               </Link>
-              - Return to the cozy corners of our website.
+              — Return to the cozy corners of our website.
             </li>
             <li className={styles.text}>
               <a href="https://staging.oldcordapp.com" className={styles.bold}>
                 Go back to Oldcord{" "}
               </a>
-              - Why not go back and check your messages, eh? They might be
+              — Why not go back and check your messages, eh? They might be
               waiting for you!
             </li>
             <li className={styles.text}>
               <Link to="about" className={styles.bold}>
                 About us{" "}
               </Link>
-              - Wait, you don't know who we are? That's a shame, but we won't
+              — Wait, you don't know who we are? That's a shame, but we won't
               shame you!
             </li>
           </ul>
