@@ -31,10 +31,10 @@ const About = ({ onGetStarted }) => {
             engaging community.
           </span>
           <span className={sectionStyles.text}>
-            Many people today didn't experience the service during its prime,
-            and Oldcord offers a way for them to see what it was like. It's
-            essential to remember that the service wasn't always the platform it
-            is today.
+            Many people today didn't experience the instant messaging service
+            during its prime, and Oldcord offers a way for them to see what it
+            was like—without needing a time machine. It's essential to remember
+            that the service wasn't always the platform it is today.
           </span>
           <span className={sectionStyles.text}>
             Oldcord allows users to explore the timeline of the service's
@@ -54,19 +54,31 @@ const About = ({ onGetStarted }) => {
               Oldcord is a non-profit project.
             </span>{" "}
             We are committed to preserving the history of the service without
-            any commercial motives.
+            any commercial motives.{" "}
+            <span className={sectionStyles.bold}>
+              We are not associated with the theme named Oldcord.
+            </span>{" "}
           </span>
           <span className={sectionStyles.title}>
             What is unique about Oldcord?
           </span>
           <span className={sectionStyles.text}>
             Oldcord boasts a range of features developed by our dedicated team
-            over it's existence. We focus on reimplementing the service's API,
-            providing quality-of-life patches, and fixing issues to enhance your
-            experience. Our platform is fully public, allowing anyone to join
-            and participate without the need for invite codes.
+            over its existence. We focus on reimplementing the service's API
+            that attempts to match the experience of the time period of your
+            selected build. Unlike other revivals which only provided one build
+            selection, we put multiple builds for users to choose from. Our
+            platform is fully public, allowing anyone to join and participate
+            without the need for invite codes.
           </span>
-
+          <span className={sectionStyles.text}>
+            Additionally, we don't serve that one instant messaging service's
+            assets on our server code; all of the assets are downloaded
+            in-browser/client by our bootstrapper, which is also our patcher
+            that provides QoL patches to improve the user experience without
+            trying to ruin the historical value of the instant messaging
+            service.
+          </span>
           <span className={sectionStyles.text}>
             We also have a community server on said instant messaging service
             where users can discuss our work, share feedback, and engage with
@@ -131,7 +143,10 @@ const About = ({ onGetStarted }) => {
             Note: Other instances may require an invite.
           </span>
           <hr />
-          <div className={styles["upsell-section"]} style={{ marginTop: "10px" }}>
+          <div
+            className={styles["upsell-section"]}
+            style={{ marginTop: "10px" }}
+          >
             <span className={styles["upsell-title"]}>
               That's it. We are Oldcord.
             </span>
