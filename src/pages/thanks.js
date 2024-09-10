@@ -33,7 +33,7 @@ const Thanks = () => {
                   <li className={sectionStyles.text}>
                     <span className={sectionStyles.bold}>dogsong</span>
                     <br />
-                    <span className={styles["text-small"]}>API Reimplementation, Bootstrapper/Patcher</span>
+                    <span className={styles["text-small"]}>Backend, Bootstrapper/Patcher</span>
                   </li>
                   <li className={sectionStyles.text}>
                     <span className={sectionStyles.bold}>deskehs</span>
