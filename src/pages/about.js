@@ -33,7 +33,7 @@ const About = ({ onGetStarted }) => {
           <span className={sectionStyles.text}>
             Many people today didn't experience the instant messaging service
             during its prime, and Oldcord offers a way for them to see what it
-            was like—without needing a time machine. It's essential to remember
+            was like — without needing a time machine. It's essential to remember
             that the service wasn't always the platform it is today.
           </span>
           <span className={sectionStyles.text}>
