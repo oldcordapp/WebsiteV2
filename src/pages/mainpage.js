@@ -148,7 +148,7 @@ const MainPage = ({ onGetStarted }) => {
             <div>
               <span className={styles["upsell-title"]}>Take back control</span>
               <span className={styles["upsell-text"]}>
-                Curious about what it’s like to manage an instant messaging
+                Curious about what it's like to manage an instant messaging
                 service? Oldcord is free and open source*, allowing you to set
                 up your own Oldcord instance in no time!
               </span>

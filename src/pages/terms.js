@@ -20,8 +20,8 @@ const Terms = () => {
           <span className={sectionStyles.title}>Introduction</span>
           <span className={sectionStyles.text}>
             Welcome! Oldcord is the best place to experience what your favourite
-            instant messaging service looked like in the past. We’re happy
-            you’re here.
+            instant messaging service looked like in the past. We're happy
+            you're here.
           </span>
           <span className={sectionStyles.text}>
             These terms set forth our legal obligations to each other and apply
@@ -54,13 +54,13 @@ const Terms = () => {
             Age Requirements and Responsibility of Parents and Legal Guardians
           </span>
           <span className={sectionStyles.text}>
-            By accessing our instance, you confirm that you’re at least 13 years
+            By accessing our instance, you confirm that you're at least 13 years
             old and meet the minimum age required by the laws in your country.
             If you are old enough to use our instance but not old enough to
             consent to our terms, your parent or legal guardian must agree to
-            our terms on your behalf. If you’re a parent or guardian allowing
+            our terms on your behalf. If you're a parent or guardian allowing
             your child to use the instance, these terms also apply to you, and
-            you’re responsible for your child’s activity.
+            you're responsible for your child's activity.
           </span>
           <span className={sectionStyles.title}>Content in Our Instance</span>
           <span className={sectionStyles.subtitle}>Your Content</span>
@@ -72,8 +72,8 @@ const Terms = () => {
           </span>
           <span className={sectionStyles.subtitle}>Other Content</span>
           <span className={sectionStyles.text}>
-            Our instance may also provide access to other users’ content. You
-            may not use this content without the person’s consent. We do not
+            Our instance may also provide access to other users' content. You
+            may not use this content without the person's consent. We do not
             endorse or verify the accuracy or reliability of content shared by
             users.
           </span>
@@ -121,7 +121,7 @@ const Terms = () => {
             Oldcord is still under development, so some features may be
             incomplete or have bugs. Our services are provided "AS IS" without
             warranties of any kind. We do not guarantee that all features will
-            be available or functional. Complaining won’t speed up fixes; it
+            be available or functional. Complaining won't speed up fixes; it
             reflects poorly on you and may result in your account being banned
             without the possibility of appeal. Your use of our service is at
             your own risk. By using our code, you agree to the terms of the GPL
@@ -129,7 +129,7 @@ const Terms = () => {
           </span>
           <span className={sectionStyles.title}>More Important Stuff</span>
           <span className={sectionStyles.text}>
-            You have certain rights that, by law, can’t be limited by these
+            You have certain rights that, by law, can't be limited by these
             terms, and we in no way intend to restrict those rights. These terms
             cover the entire agreement between you and Oldcord for your use of
             our services. We may update these terms to reflect changes to our
