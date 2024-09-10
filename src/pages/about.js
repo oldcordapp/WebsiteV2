@@ -97,7 +97,7 @@ const About = ({ onGetStarted }) => {
             instant messaging service.
           </span>
           <span className={sectionStyles.title}>Who works on Oldcord?</span>
-          <span className={sectionStyles.text}>
+          <span className={sectionStyles.text} style={{ marginBottom: "0" }}>
             Our team consists of three developers specializing in different
             areas:
           </span>
