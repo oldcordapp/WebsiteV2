@@ -56,13 +56,13 @@ const Privacy = () => {
               used solely for moderation purposes to combat abuse and spam.
             </li>
           </ul>
-          <span className={styles.subtitle}>Cookies</span>
+          <span className={sectionStyles.subtitle}>Cookies</span>
           <span className={sectionStyles.text}>
             We use essential cookies to improve your experience. These cookies
             help us remember if you have skipped the dialog box or made a build
             selection. We do not use cookies for advertising purposes.
           </span>
-          <span className={styles.subtitle}>Captcha</span>
+          <span className={sectionStyles.subtitle}>Captcha</span>
           <span className={sectionStyles.text}>
             We implement a captcha during the registration process to enhance
             security and prevent automated abuse.
