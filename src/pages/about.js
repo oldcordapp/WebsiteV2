@@ -72,7 +72,7 @@ const About = ({ onGetStarted }) => {
             without the need for invite codes.
           </span>
           <span className={sectionStyles.text}>
-            Additionally, we don't serve that one instant messaging service's
+            Additionally, we don't serve said instant messaging service's
             assets on our server code; all of the assets are downloaded
             in-browser/client by our bootstrapper, which is also our patcher
             that provides QoL patches to improve the user experience without
