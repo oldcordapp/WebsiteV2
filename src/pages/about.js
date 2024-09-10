@@ -65,15 +65,15 @@ const About = ({ onGetStarted }) => {
             reimplementing the service's API to match the experience of the time
             period for your selected build. Unlike other revivals that provide
             only one build, we offer multiple options for users to choose from.
+            Our platform is fully public, allowing anyone to join and
+            participate without needing invite codes.
           </span>
           <span className={sectionStyles.text}>
-            Our platform is fully public, allowing anyone to join and
-            participate without needing invite codes. Additionally, we do not
-            serve the service's assets directly on our server; all assets are
-            downloaded in-browser/client by our bootstrapper from our archival
-            CDN. Our bootstrapper also acts as a patcher to provide
-            quality-of-life updates while preserving the historical value of the
-            instant messaging service.
+            Additionally, we do not serve the service's assets directly on our
+            server; all assets are downloaded in-browser/client by our
+            bootstrapper from our archival CDN. Our bootstrapper also acts as a
+            patcher to provide quality-of-life updates while preserving the
+            historical value of the instant messaging service.
           </span>
           <span className={sectionStyles.text}>
             We also maintain a community server on the service, where users can
