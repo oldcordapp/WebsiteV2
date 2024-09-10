@@ -1,30 +1,15 @@
-import React, { useEffect } from "react";
+import { Helmet } from 'react-helmet-async';
 
-const MetaTags = ({ title, description }) => {
-  useEffect(() => {
-    document.title = title;
-
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription && description) {
-      metaDescription.setAttribute("content", description);
-    }
-
-    return () => {
-      document.title = "Oldcord";
-
-      const cleanupMetaDescription = document.querySelector(
-        'meta[name="description"]'
-      );
-      if (cleanupMetaDescription) {
-        cleanupMetaDescription.setAttribute(
-          "content",
-          description || "Oldcord, it is website. He is for old instant-messager. Good for use."
-        );
-      }
-    };
-  }, [title, description]);
-
-  return null;
+const MetaTags = ({
+    title = 'Oldcord',
+    description = 'Oldcord, it is website. He is for old instant-messager. Good for use.',
+}) => {
+    return (
+        <Helmet>
+            <title>{title}</title>
+            <meta name="description" content={description} />
+        </Helmet>
+    );
 };
 
 export default MetaTags;

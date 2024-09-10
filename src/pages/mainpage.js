@@ -27,7 +27,9 @@ const marqueeAnimation = (width) => keyframes`
   }
 `;
 
-const MarqueeContent = styled.div`
+const MarqueeContent = styled.div.withConfig({
+  shouldForwardProp: (prop) => !['totalWidth'].includes(prop),
+})`
   display: flex;
   animation: ${({ totalWidth }) => marqueeAnimation(totalWidth)} 15s linear
     infinite;

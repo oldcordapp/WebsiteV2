@@ -7,6 +7,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Cookies from "js-cookie";
+import { HelmetProvider } from "react-helmet-async";
 
 import "./index.css";
 import Header from "./components/header.js";
@@ -95,10 +96,7 @@ const App = () => {
           path="/about"
           element={<About onGetStarted={handleGetStarted} />}
         />
-        <Route
-          path="/thanks"
-          element={<Thanks />}
-        />
+        <Route path="/thanks" element={<Thanks />} />
         <Route path="*" element={<FourOhFour />} />
       </Routes>
       <Footer onGetStarted={handleGetStarted} textColorClass={textColorClass} />
@@ -116,8 +114,10 @@ const App = () => {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <App />
+      </Router>
+    </HelmetProvider>
   </React.StrictMode>
 );
