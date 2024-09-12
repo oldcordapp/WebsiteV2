@@ -64,12 +64,12 @@ const Tooltip = styled.div`
   &:before {
     content: "";
     position: absolute;
-    top: 100%; /* Move the triangle to the bottom */
+    top: 100%;
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: white transparent transparent transparent; /* Triangle pointing down */
+    border-color: white transparent transparent transparent;
   }
 `;
 
