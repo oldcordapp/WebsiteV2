@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
-
 import MetaTags from "../components/metaTags.js";
-
 import styles from "./mainpage.module.css";
 import taglines from "../assets/taglines.json";
 import image2015 from "../assets/images/server_settings.png";
@@ -28,11 +26,14 @@ const marqueeAnimation = (width) => keyframes`
 `;
 
 const MarqueeContent = styled.div.withConfig({
-  shouldForwardProp: (prop) => !['totalWidth'].includes(prop),
+  shouldForwardProp: (prop) => !["totalWidth"].includes(prop),
 })`
   display: flex;
   animation: ${({ totalWidth }) => marqueeAnimation(totalWidth)} 15s linear
     infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
 `;
 
 const Image = styled.img`
@@ -41,12 +42,58 @@ const Image = styled.img`
   max-height: ${height}px;
   min-width: ${width}px;
   min-height: ${height}px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
+
+const Tooltip = styled.div`
+  position: absolute;
+  background: white;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  max-width: 300px;
+  transform: translate(-50%, -100%);
+  font-size: 14px;
+  text-align: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 100%; /* Move the triangle to the bottom */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent; /* Triangle pointing down */
+  }
+`;
+
+const getFormattedDate = (releaseDateCode) => {
+  const dateMapping = {
+    june_12_2015: "June 12, 2015",
+    november_3_2016: "November 3, 2016",
+    march_30_2017: "March 30, 2017",
+    april_1_2018: "April 1, 2018",
+  };
+  return dateMapping[releaseDateCode] || "Unknown Date";
+};
 
 const MainPage = ({ onGetStarted }) => {
   const [randomTagline, setRandomTagline] = useState({
     title: "",
     subtitle: "",
+  });
+  const [tooltip, setTooltip] = useState({
+    visible: false,
+    text: "",
+    x: 0,
+    y: 0,
+    releaseDateCode: "",
   });
 
   useEffect(() => {
@@ -54,13 +101,49 @@ const MainPage = ({ onGetStarted }) => {
     setRandomTagline(taglines[randomIndex]);
   }, []);
 
-  const images = [image2015, image2016, image2017, image2018];
+  const images = [
+    {
+      src: image2015,
+      releaseDateCode: "june_12_2015",
+      info: "The first instant messaging service build that's archived! It looks so different than later versions.",
+    },
+    {
+      src: image2016,
+      releaseDateCode: "november_3_2016",
+      info: "Your favourite instant messaging service now has reactions! (Very Epic Science Experiment)",
+    },
+    {
+      src: image2017,
+      releaseDateCode: "march_30_2017",
+      info: "The Hummus experience! Last build before it got it's UI changed to what it is now.",
+    },
+    {
+      src: image2018,
+      releaseDateCode: "april_1_2018",
+      info: "Help I've fallen and I cannot get up I need @someone!",
+    },
+  ];
 
-  let totalWidth = 0;
+  let totalWidth = images.length * (width + marginRight);
 
-  for (let i = 1; i <= images.length; i++) {
-    totalWidth = totalWidth + width + marginRight;
-  }
+  const handleMouseEnter = (e, info, releaseDateCode) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const tooltipY = rect.top - 10;
+    const tooltipX = rect.left + rect.width / 2;
+    const formattedDate = getFormattedDate(releaseDateCode);
+
+    setTooltip({
+      visible: true,
+      x: tooltipX,
+      y: tooltipY,
+      text: ` ${formattedDate}\n${info}`,
+      releaseDateCode,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    setTooltip({ ...tooltip, visible: false });
+  };
 
   return (
     <div>
@@ -82,19 +165,48 @@ const MainPage = ({ onGetStarted }) => {
           >
             Get Started
           </span>
-          <a href="https://github.com/oldcordapp/OldCordV3" className="button-link">
+          <a
+            href="https://github.com/oldcordapp/OldCordV3"
+            className="button-link"
+          >
             <span className={`button button-white ${styles.button}`}>
               Host your own Oldcord instance
             </span>
           </a>
         </div>
+        {tooltip.visible && tooltip.x && tooltip.y && (
+          <Tooltip
+            className="text-black"
+            style={{
+              top: tooltip.y,
+              left: tooltip.x,
+            }}
+          >
+            {tooltip.text.split("\n").map((line, i) => (
+              <div key={i}>{line}</div>
+            ))}
+          </Tooltip>
+        )}
         <div className={styles.marquee}>
           <MarqueeContent totalWidth={totalWidth}>
             {images
               .concat(images)
               .concat(images)
               .map((img, index) => (
-                <Image key={index} src={img} alt={`Image ${index}`} />
+                <div
+                  key={index}
+                  style={{ position: "relative" }}
+                  onMouseEnter={(e) =>
+                    handleMouseEnter(e, img.info, img.releaseDateCode)
+                  }
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <a
+                    href={`https://staging.oldcordapp.com/launch?release_date=${img.releaseDateCode}`}
+                  >
+                    <Image src={img.src} alt={`Image ${index}`} />
+                  </a>
+                </div>
               ))}
           </MarqueeContent>
         </div>
@@ -161,7 +273,7 @@ const MainPage = ({ onGetStarted }) => {
                 any code from that service.
               </span>
             </div>
-            <OpenSource style={{ color: "#06152a"}}/>
+            <OpenSource style={{ color: "#06152a" }} />
           </div>
         </div>
         <div className={styles["upsell-section-dark"]}>
