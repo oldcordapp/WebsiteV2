@@ -82,7 +82,7 @@ const Footer = ({ onGetStarted, textColorClass }) => {
         </div>
         <span
           className={`${styles.notice} ${textColorClass} ${styles[textColorClass]}`}
-          style={{ marginBottom: "0px" }}
+          style={{ marginTop: "40px" }}
         >
           Oldcord is an old Discord historical preservation/revival project and
           is not affiliated with or endorsed by Discord, Inc. This website has
@@ -91,7 +91,6 @@ const Footer = ({ onGetStarted, textColorClass }) => {
         </span>
         <span
           className={`${styles.notice} ${textColorClass} ${styles[textColorClass]}`}
-          style={{ marginTop: "0px" }}
         >
           Some registered trademarks may appear on Oldcord, and those rights
           (along with others) belong to their respective owners. In short, they
