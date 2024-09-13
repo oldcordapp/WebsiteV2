@@ -52,7 +52,7 @@ const Cookies = () => {
             We do not use functional cookies or any other types of cookies.
           </span>
           <span className={sectionStyles.title}>Managing Cookies</span>
-          <span className={sectionStyles.text}>
+          <span className={sectionStyles.text} style={{ marginBottom: "0" }}>
             You can manage how cookies are used on our Instance through your
             browser settings. Instructions for managing cookies can be found in
             the help sections of popular browsers such as:
