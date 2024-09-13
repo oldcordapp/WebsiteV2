@@ -100,10 +100,10 @@ const Terms = () => {
           <span className={sectionStyles.text}>
             We will work with law enforcement{" "}
             <span className={sectionStyles.bold}>only if</span> we find illegal
-            content, including but not limited to CSAM, or if they provide us
-            with a proper search warrant. We will not willingly provide any
-            backdoors or access to federal authorities. If we receive a search
-            warrant, we will notify everyone on our Instance.
+            discussions or content, including but not limited to CSAM, or if
+            they provide us with a proper search warrant. We will not willingly
+            provide any backdoors or access to federal authorities. If we
+            receive a search warrant, we will notify everyone on our Instance.
           </span>
           <span className={sectionStyles.title}>Termination</span>
           <span className={sectionStyles.text}>
