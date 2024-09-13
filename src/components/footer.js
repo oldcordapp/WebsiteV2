@@ -42,7 +42,7 @@ const Footer = ({ onGetStarted, textColorClass }) => {
               Instance-related
             </span>
             <span className={styles["navigation-link"]}>
-              <Link to="terms">Terms</Link>
+              <Link to="terms">Terms and Conditions</Link>
             </span>
             <span className={styles["navigation-link"]}>
               <Link to="privacy">Privacy Policy</Link>
