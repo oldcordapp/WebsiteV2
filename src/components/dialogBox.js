@@ -47,7 +47,7 @@ const DialogBox = ({
         </span>
         <span className={styles.subtitle} style={{ marginBottom: "20px" }}>
           Please also read the <a href="/terms">T&C</a>,{" "}
-          <a href="/privacy">Privacy Policy</a> <a href="/cookies">Cookie Policy</a> and{" "}
+          <a href="/privacy">Privacy Policy</a>, <a href="/cookies">Cookie Policy</a> and{" "}
           <a href="/guidelines">Instance Guidelines</a>.
         </span>
         <div className={styles["i-understand"]}>
