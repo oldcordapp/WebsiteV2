@@ -235,10 +235,10 @@ const Guidelines = () => {
           </span>
           <span className={sectionStyles.title}>Ending Words</span>
           <span className={sectionStyles.text}>
-            This Instance Guidelines are not exhaustive, and we reserve the
-            right to terminate your account for any valid reason. Just be a good
-            person — treat others how you want to be treated — and we won't get
-            in your way. Thank you for your cooperation!
+            These Guidelines are not exhaustive, and we reserve the right to
+            terminate your account for any valid reason. Just be a good person —
+            treat others how you want to be treated — and we won't get in your
+            way. Thank you for your cooperation!
           </span>
         </div>
       </div>
