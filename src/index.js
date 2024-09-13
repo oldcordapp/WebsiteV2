@@ -22,6 +22,7 @@ import Privacy from "./pages/privacy.js";
 import Guidelines from "./pages/guidelines.js";
 import About from "./pages/about.js";
 import Thanks from "./pages/thanks.js";
+import CookiePolicy from "./pages/cookies.js";
 
 import FourOhFour from "./pages/404.js";
 
@@ -70,6 +71,7 @@ const App = () => {
       case "/guidelines":
       case "/about":
       case "/thanks":
+      case "/cookies":
         document.body.classList.add("bg-hurple");
         setTextColorClass("text-light-gray");
         break;
@@ -92,6 +94,7 @@ const App = () => {
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/guidelines" element={<Guidelines />} />
+        <Route path="/cookies" element={<CookiePolicy />} />
         <Route
           path="/about"
           element={<About onGetStarted={handleGetStarted} />}

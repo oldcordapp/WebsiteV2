@@ -1,17 +1,17 @@
 import styles from "./legal.module.css";
 import sectionStyles from "./sections.module.css";
 
-import MetaTags from '../components/metaTags.js';
+import MetaTags from "../components/metaTags.js";
 
 const Guidelines = () => {
   return (
     <div>
-      <MetaTags title="Oldcord — Instance Guidelines"/>
+      <MetaTags title="Oldcord — Instance Guidelines" />
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Instance Guidelines</div>
           <div className={`${styles["tagline-subtitle"]} text-light-gray`}>
-            Last Updated: September 3rd, 2024 | Effective: September 3rd, 2024
+            Last Updated: September 13th, 2024 | Effective: (Not Decided Yet)
           </div>
         </div>
       </div>
@@ -20,14 +20,18 @@ const Guidelines = () => {
           <span className={sectionStyles.title}>Introduction</span>
           <span className={sectionStyles.text}>
             Welcome to Oldcord! We strive to create a safe and enjoyable
-            environment for all users. These Instance Guidelines outline what is
-            not allowed on our instance. Everyone must adhere to these rules,
-            which apply to all parts of Oldcord, including your content,
-            behaviors, and interactions.
+            environment for all users. Our Instance Guidelines ensure everyone
+            can express themselves and find community — but not at the expense
+            of anyone else.
           </span>
           <span className={sectionStyles.text}>
-            This only applies to our instance. Third-party instances might have
-            different guidelines.
+            These Guidelines explain what isn't allowed on Oldcord. Everyone
+            must follow these rules, and they apply to all parts of our
+            instance, including your content, behaviors, and interactions.
+          </span>
+          <span className={sectionStyles.text}>
+            Please note that this only applies to our instance; third-party
+            instances might have different guidelines.
           </span>
           <span className={sectionStyles.title}>Respect Each Other</span>
           <ol>
@@ -77,7 +81,9 @@ const Guidelines = () => {
               puts your online or physical safety at risk.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Sexual Conduct with Minors</span>
+              <span className={sectionStyles.bold}>
+                Sexual Conduct with Minors
+              </span>
               <br />
               Do not solicit sexual content from or engage in any sexual conduct
               with anyone under the age of 18.
@@ -107,9 +113,15 @@ const Guidelines = () => {
               Do not share real media depicting excessive violence or animal
               harm.
             </li>
+            <li className={sectionStyles.text}>
+              <span className={sectionStyles.bold}>Disturbance</span>
+              <br />
+              Do not disturb the atmosphere of Oldcord or cause disturbances
+              within the community.
+            </li>
           </ol>
           <span className={sectionStyles.title}>Respect Oldcord</span>
-          <ol start="13">
+          <ol start="14">
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>Spam</span>
               <br />
@@ -140,7 +152,9 @@ const Guidelines = () => {
               harm.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Identity Misrepresentation</span>
+              <span className={sectionStyles.bold}>
+                Identity Misrepresentation
+              </span>
               <br />
               Do not misrepresent your identity in a deceptive or harmful way.
             </li>
@@ -172,14 +186,16 @@ const Guidelines = () => {
               Do not submit false or misleading reports to Oldcord support.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Treating Oldcord developers</span>
+              <span className={sectionStyles.bold}>
+                Treating Oldcord developers
+              </span>
               <br />
               Do not treat Oldcord developers in an inhumane way, nor treat them
               as "tech support".
             </li>
           </ol>
           <span className={sectionStyles.title}>Follow the law</span>
-          <ol start="25">
+          <ol start="26">
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>Intellectual Property</span>
               <br />
@@ -212,10 +228,17 @@ const Guidelines = () => {
           </span>
           <span className={sectionStyles.title}>Evolution of Guidelines</span>
           <span className={sectionStyles.text}>
-            These Guidelines may evolve over time. We will do our best to notify
-            you of any updates, but it is your responsibility to adhere to the
-            spirit of these rules and help keep Oldcord a safe and enjoyable
-            space for everyone. Thank you for your cooperation!
+            These Guidelines may evolve over time. While we will do our best to
+            notify you of any updates, it is your responsibility to adhere to
+            the spirit of these rules and help keep Oldcord a safe and enjoyable
+            space for everyone.
+          </span>
+          <span className={sectionStyles.title}>Ending Words</span>
+          <span className={sectionStyles.text}>
+            This instance's guidelines are not exhaustive, and we reserve the
+            right to terminate your account for any valid reason. Just be a good
+            person — treat others how you want to be treated — and we won't get
+            in your way. Thank you for your cooperation!
           </span>
         </div>
       </div>

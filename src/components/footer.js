@@ -48,6 +48,9 @@ const Footer = ({ onGetStarted, textColorClass }) => {
               <Link to="privacy">Privacy Policy</Link>
             </span>
             <span className={styles["navigation-link"]}>
+              <Link to="cookies">Cookie Policy</Link>
+            </span>
+            <span className={styles["navigation-link"]}>
               <Link to="guidelines">Guidelines</Link>
             </span>
             <span className={styles["navigation-link"]}>Status</span>
