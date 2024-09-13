@@ -59,10 +59,12 @@ const Privacy = () => {
                 Operating System Information:{" "}
               </span>
               Collected to assist in identifying users not based on User ID.
+              They are hashed and salted when collected.
             </li>
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>Browser Information: </span>
               Collected to assist in identifying users not based on User ID.
+              They are hashed and salted when collected.
             </li>
           </ul>
           <span className={sectionStyles.title}>
