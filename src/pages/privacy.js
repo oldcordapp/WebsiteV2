@@ -106,8 +106,8 @@ const Privacy = () => {
             (Operating System Information and Browser Information) is only for
             the purposes outlined above, plus moderation (to address abuse of
             our Terms and Conditions or Instance Guidelines) and law enforcement
-            purposes (such as posting illegal content or in response to law
-            enforcement warrants). We do not sell your data.
+            purposes (such as posting illegal discussions or content, or in
+            response to law enforcement warrants). We do not sell your data.
           </span>
           <span className={sectionStyles.title}>
             Use of Third Party Services
