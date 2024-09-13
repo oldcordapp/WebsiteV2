@@ -27,10 +27,10 @@ const Guidelines = () => {
           <span className={sectionStyles.text}>
             These Guidelines explain what isn't allowed on Oldcord. Everyone
             must follow these rules, and they apply to all parts of our
-            instance, including your content, behaviors, and interactions.
+            Instance, including your content, behaviors, and interactions.
           </span>
           <span className={sectionStyles.text}>
-            Please note that this only applies to our instance; third-party
+            Please note that this only applies to our Instance; third-party
             instances might have different guidelines.
           </span>
           <span className={sectionStyles.title}>Respect Each Other</span>
@@ -235,7 +235,7 @@ const Guidelines = () => {
           </span>
           <span className={sectionStyles.title}>Ending Words</span>
           <span className={sectionStyles.text}>
-            This instance's guidelines are not exhaustive, and we reserve the
+            This Instance Guidelines are not exhaustive, and we reserve the
             right to terminate your account for any valid reason. Just be a good
             person — treat others how you want to be treated — and we won't get
             in your way. Thank you for your cooperation!

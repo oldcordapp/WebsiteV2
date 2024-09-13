@@ -25,7 +25,7 @@ const Privacy = () => {
             safeguarding it.
           </span>
           <span className={sectionStyles.text}>
-            This policy applies only to our instance, and we do not collect
+            This policy applies only to our Instance, and we do not collect
             information from third-party instances.
           </span>
           <span className={sectionStyles.title}>Information We Collect</span>
@@ -40,7 +40,7 @@ const Privacy = () => {
             </li>
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>Username: </span>Your chosen
-              identifier on our instance.
+              identifier on our Instance.
             </li>
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>Password: </span>Stored in a
@@ -103,7 +103,7 @@ const Privacy = () => {
             The collection of your IP address and browser fingerprint data
             (Operating System Information and Browser Information) is only for
             the purposes outlined above, plus moderation (to address abuse of
-            our Terms of Service or instance guidelines) and law enforcement
+            our Terms and Conditions or Instance Guidelines) and law enforcement
             purposes (such as posting illegal content or in response to law
             enforcement warrants). We do not sell your data.
           </span>
@@ -135,7 +135,7 @@ const Privacy = () => {
             </li>
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>Direct Message: </span>You
-              can also reach us via direct messaging on our instance or Discord.
+              can also reach us via direct messaging on our Instance or Discord.
             </li>
           </ul>
           <span className={sectionStyles.text}>
@@ -166,7 +166,7 @@ const Privacy = () => {
             </li>
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>Direct Message: </span>You
-              can also reach us via direct messaging on our instance or Discord.
+              can also reach us via direct messaging on our Instance or Discord.
             </li>
           </ul>
           <span className={sectionStyles.text}>
