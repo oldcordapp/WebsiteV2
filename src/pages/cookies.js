@@ -23,6 +23,10 @@ const Cookies = () => {
             information. This Cookie Policy explains how we use cookies and
             similar technologies on our Instance.
           </span>
+          <span className={sectionStyles.text}>
+            This policy applies only to our Instance, and we do not collect
+            Cookies from third-party instances.
+          </span>
           <span className={sectionStyles.title}>What are Cookies?</span>
           <span className={sectionStyles.text}>
             Cookies are small text files placed on your computer or device that
