@@ -51,7 +51,7 @@ const Footer = ({ onGetStarted, textColorClass }) => {
               <Link to="cookies">Cookie Policy</Link>
             </span>
             <span className={styles["navigation-link"]}>
-              <Link to="guidelines">Guidelines</Link>
+              <Link to="guidelines">Instance Guidelines</Link>
             </span>
             <span className={styles["navigation-link"]}>Status</span>
           </div>
