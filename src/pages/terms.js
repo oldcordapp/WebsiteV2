@@ -31,7 +31,7 @@ const Terms = () => {
           <ul>
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>"We," "Us," and "Our"</span>{" "}
-              refers to Oldcord.
+              refers to the team behind Oldcord.
             </li>
             <li className={sectionStyles.text}>
               <span className={sectionStyles.bold}>"Instance"</span> refers to
