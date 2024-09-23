@@ -47,20 +47,6 @@ const About = ({ onGetStarted }) => {
             preserving and sharing the unique experience of using the service
             during its formative years.
           </span>
-          <span className={sectionStyles.text} style={{ marginBottom: "0" }}>
-            In general, these are the features we offer to our users:
-          </span>
-          <ul>
-            <li className={sectionStyles.text}>
-              Multiple build options from 2015 to 2018
-            </li>
-            <li className={sectionStyles.text}>
-              Public access without invite codes
-            </li>
-            <li className={sectionStyles.text}>
-              Quality-of-life updates through our patcher
-            </li>
-          </ul>
           <span className={sectionStyles.text}>
             <span className={sectionStyles.bold}>
               Oldcord is a non-profit project.
