@@ -23,11 +23,11 @@ const About = ({ onGetStarted }) => {
           <span className={sectionStyles.title}>Who Are We?</span>
           <span className={sectionStyles.text}>
             Welcome to Oldcord! We aim to be the best historical preservation
-            project for older versions of a popular instant messaging service.
-            Our focus is on versions from 2015 to 2018. Some may refer to
-            Oldcord as a revival (or "private server", if you prefer that term).
-            Our platform allows users to experience the nostalgia of earlier
-            iterations while fostering a friendly and engaging community.
+            project out there (or "revival"/"private server", if you prefer
+            those terms) for old versions of a popular instant messaging
+            service. We currently offer versions from 2015 to 2018. Users are
+            free to use any features available in these versions that conform to
+            our rules.
           </span>
           <span className={sectionStyles.text}>
             Many users today didn't experience the service during its prime, and
@@ -47,6 +47,20 @@ const About = ({ onGetStarted }) => {
             preserving and sharing the unique experience of using the service
             during its formative years.
           </span>
+          <span className={sectionStyles.text} style={{ marginBottom: "0" }}>
+            In general, these are the features we offer to our users:
+          </span>
+          <ul>
+            <li className={sectionStyles.text}>
+              Multiple build options from 2015 to 2018
+            </li>
+            <li className={sectionStyles.text}>
+              Public access without invite codes
+            </li>
+            <li className={sectionStyles.text}>
+              Quality-of-life updates through our patcher
+            </li>
+          </ul>
           <span className={sectionStyles.text}>
             <span className={sectionStyles.bold}>
               Oldcord is a non-profit project.
@@ -65,41 +79,48 @@ const About = ({ onGetStarted }) => {
             reimplementing the service's API to match the experience of the time
             period for your selected build. Unlike other revivals that provide
             only one build, we offer multiple options for users to choose from.
-            Our platform is fully public, allowing anyone to join and
-            participate without needing invite codes.
           </span>
           <span className={sectionStyles.text}>
-            Additionally, we do not serve the service's assets directly on our
-            server; all assets are downloaded in-browser/client by our
-            bootstrapper from our archival CDN. Our bootstrapper also acts as a
-            patcher to provide quality-of-life updates while preserving the
-            historical value of the instant messaging service.
+            We also have a bootstrapper, which acts as both a downloader and a
+            patcher. All assets are downloaded in-browser/client by our
+            bootstrapper from our archival CDN, rather than being served
+            directly on our server. This bootstrapper also provides
+            quality-of-life updates while preserving the historical value of the
+            instant messaging service.
           </span>
           <span className={sectionStyles.text}>
-            We also maintain a community server on the service, where users can
-            discuss our work, share feedback, and engage with one another in a
-            supportive environment.
+            Finally, we have a fully public platform where anyone can join and
+            participate without needing invite codes. We also maintain a
+            community server on the service, where users can discuss our work,
+            share feedback, and engage with one another in a supportive
+            environment.
           </span>
           <span className={sectionStyles.title}>
             Why is this still a thing?
           </span>
           <span className={sectionStyles.text}>
-            Oldcord stands out in the revival scene as one of the only two
-            public revivals alongside Hummus. Unlike other revivals that may
-            suffer from instability or poor community management, Oldcord has
-            maintained steady growth and a dedicated user base.
+            As stated above, we aim to be the best historical preservation
+            project and revival. Other revivals may have (subjectively) better
+            features at the cost of having less historical accuracy, leading to
+            a less authentic experience, or have staff members that do not
+            understand how to maintain a project focused on historical
+            preservation.
           </span>
           <span className={sectionStyles.text}>
-            While we acknowledge valid criticisms, much feedback stems from
-            users who may not fully understand our vision or have had individual
-            negative experiences. We believe Oldcord offers a unique and stable
-            alternative for those looking to relive the earlier days of the
-            instant messaging service.
+            Of course, having been up for some time, Oldcord has faced various
+            criticisms. We advise users and non-users alike to take criticism of
+            Oldcord with a grain of salt. We admit that there is valid criticism
+            of Oldcord, but much feedback comes from users who may not fully
+            understand our vision or have had individual negative experiences.
+          </span>
+          <span className={sectionStyles.text}>
+            We believe that Oldcord offers a unique and stable alternative for
+            those looking to relive the earlier days of the instant messaging
+            service.
           </span>
           <span className={sectionStyles.title}>Who works on Oldcord?</span>
           <span className={sectionStyles.text} style={{ marginBottom: "0" }}>
-            Our team consists of three developers specializing in different
-            areas:
+            We have a team of three developers that work on different areas:
           </span>
           <ul>
             <li className={sectionStyles.text}>
@@ -135,7 +156,8 @@ const About = ({ onGetStarted }) => {
             README file in our GitHub repository!
           </span>
           <span className={sectionStyles.text} style={{ fontStyle: "italic" }}>
-            Note: Other instances may require an invite.
+            Note: While our instance is fully public, other instances may require an
+            invite.
           </span>
           <hr />
           <div
