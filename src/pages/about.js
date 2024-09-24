@@ -132,18 +132,18 @@ const About = ({ onGetStarted }) => {
           </span>
           <span className={sectionStyles.title}>How do I get started?</span>
           <span className={sectionStyles.text}>
-            Getting started with Oldcord is simple! As a public instance, anyone
-            can join and explore our features without needing an invitation.
-            Just create an account, and you'll be ready to connect with others
-            in the Oldcord community.
+            Getting started with Oldcord is simple! Having a public instance,
+            anyone can join and explore our features without needing an
+            invitation. Just create an account, and you'll be ready to connect
+            with others in the Oldcord community.
           </span>
           <span className={sectionStyles.text}>
             You can also host your own instance of Oldcord by following the
             README file in our GitHub repository!
           </span>
           <span className={sectionStyles.text} style={{ fontStyle: "italic" }}>
-            Note: While our instance is fully public, other instances may require an
-            invite.
+            Note: While our instance is fully public, other instances may
+            require an invite.
           </span>
           <hr />
           <div
