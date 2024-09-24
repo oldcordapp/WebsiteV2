@@ -132,7 +132,7 @@ const About = ({ onGetStarted }) => {
           </span>
           <span className={sectionStyles.title}>How do I get started?</span>
           <span className={sectionStyles.text}>
-            Getting started with Oldcord is simple! Having a public instance,
+            Getting started with Oldcord is simple! As our instance is public,
             anyone can join and explore our features without needing an
             invitation. Just create an account, and you'll be ready to connect
             with others in the Oldcord community.
