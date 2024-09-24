@@ -75,7 +75,7 @@ const About = ({ onGetStarted }) => {
             instant messaging service.
           </span>
           <span className={sectionStyles.text}>
-            Finally, we have a fully public platform where anyone can join and
+            Finally, we have a fully public instance where anyone can join and
             participate without needing invite codes. We also maintain a
             community server on the service, where users can discuss our work,
             share feedback, and engage with one another in a supportive
@@ -132,7 +132,7 @@ const About = ({ onGetStarted }) => {
           </span>
           <span className={sectionStyles.title}>How do I get started?</span>
           <span className={sectionStyles.text}>
-            Getting started with Oldcord is simple! As a public platform, anyone
+            Getting started with Oldcord is simple! As a public instance, anyone
             can join and explore our features without needing an invitation.
             Just create an account, and you'll be ready to connect with others
             in the Oldcord community.
