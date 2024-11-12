@@ -162,7 +162,7 @@ const About = () => {
               className={`button button-hurple ${styles.button} ${styles["upsell-button"]}`}
               onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
             >
-              Get Started (Instance is closed until futher notice)
+              Get Started
             </span>
           </div>
         </div>

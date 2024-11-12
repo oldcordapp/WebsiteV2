@@ -80,7 +80,7 @@ const Footer = ({ onGetStarted, textColorClass }) => {
             className={`button button-hurple ${styles.button}`}
             onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
           >
-            Get Started (Instance is closed until futher notice)
+            Get Started
           </span>
         </div>
         <span
