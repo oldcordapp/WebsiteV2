@@ -42,16 +42,30 @@ const DialogBox = ({ isOpen, onClose, redirectUrl }) => {
         </div>
 
         <span className={styles.subtitle}>
-          Oldcord is still under development, so some features may be incomplete
+          Oldcord is still under development, the instance you'll be accessing to is considered "staging", so some features may be incomplete
           or have bugs.
           <span className={styles.bold}>
             {" "}Complaining won't speed up fixes; it only reflects poorly on you,
-            and we won't accept that kind of behavior.
+            and we won't accept that kind of behavior. Your account may be terminated if you do so.
           </span>
         </span>
 
+        <span className={styles.subtitle}>
+        Think of it this way: <span className={styles.bold}>
+            {" "}A practice run in a test kitchen isn't the same as serving customers in your actual restaurant. Just like how "staging" (a testing environment) isn't the same as "production" (a stable environment).
+          </span>
+        </span>
+
+        <span className={styles.subtitle}>
+        To report bugs or issues, please do so constructively via the <span className={styles.bold}>#bug-reports</span> channel on the project server in Oldcord or the instant messaging service we're archiving of, or on GitHub for the Oldcord project.
+        </span>
+
+        <span className={`${styles.subtitle} ${styles.bold}`}>
+          Oldcord is also not meant to be used as an alternative to any instant messaging services in blocked settings (e.g. schools).
+        </span>
+
         <span className={styles.subtitle} style={{ marginBottom: "20px" }}>
-          Please also read the{' '}
+          Finally, please also read the{' '}
           {['T&C', 'Privacy Policy', 'Cookie Policy', 'Instance Guidelines'].map((text, i, arr) => (
             <span key={text}>
               <a href={`/${text.toLowerCase().replace(/\s/g, '')}`}>{text}</a>
