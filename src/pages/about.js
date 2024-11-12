@@ -158,9 +158,9 @@ const About = ({ onGetStarted }) => {
             </span>
             <span
               className={`button button-hurple ${styles.button} ${styles["upsell-button"]}`}
-              onClick={onGetStarted}
+              onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
             >
-              Get Started
+              Get Started (Instance is closed until futher notice)
             </span>
           </div>
         </div>

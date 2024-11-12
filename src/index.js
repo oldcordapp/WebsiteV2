@@ -27,16 +27,19 @@ import CookiePolicy from "./pages/cookies.js";
 import FourOhFour from "./pages/404.js";
 
 const App = () => {
-  const [isDialogOpen, setDialogOpen] = useState(false);
+  const [dialog, setDialog] = useState({
+    isOpen: false,
+    redirectUrl: ""
+  });
+
   const [isChecked, setChecked] = useState(false);
   const [textColorClass, setTextColorClass] = useState("");
 
-  const handleGetStarted = () => {
-    const shouldSkipDialog = Cookies.get("skip-dialog");
-    if (shouldSkipDialog === "true") {
-      window.location.href = "https://staging.oldcordapp.com/selector";
+  const handleGetStarted = (redirectUrl = "https://staging.oldcordapp.com/selector") => {
+    if (Cookies.get("skip-dialog") === "true") {
+      window.location.href = redirectUrl;
     } else {
-      setDialogOpen(true);
+      setDialog({ isOpen: true, redirectUrl });
     }
   };
 
@@ -45,12 +48,8 @@ const App = () => {
   };
 
   const handleCloseDialog = () => {
-    setDialogOpen(false);
+    setDialog({ isOpen: false, redirectUrl: "" });
     setChecked(false);
-  };
-
-  const handleOpenSelector = () => {
-    window.location.href = "https://staging.oldcordapp.com/selector";
   };
 
   const location = useLocation();
@@ -104,11 +103,11 @@ const App = () => {
       </Routes>
       <Footer onGetStarted={handleGetStarted} textColorClass={textColorClass} />
       <DialogBox
-        isOpen={isDialogOpen}
+        isOpen={dialog.isOpen}
         onClose={handleCloseDialog}
         onCheckboxChange={handleCheckboxChange}
         isChecked={isChecked}
-        onOpenSelector={handleOpenSelector}
+        redirectUrl={dialog.redirectUrl}
       />
     </>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
+import Cookies from "js-cookie";
 import MetaTags from "../components/metaTags.js";
 import styles from "./mainpage.module.css";
 import taglines from "../assets/taglines.json";
@@ -145,6 +146,16 @@ const MainPage = ({ onGetStarted }) => {
     setTooltip({ ...tooltip, visible: false });
   };
 
+  const handleImageClick = (e, releaseDateCode) => {
+    e.preventDefault();
+    const redirectUrl = `https://staging.oldcordapp.com/launch?release_date=${releaseDateCode}`;
+    if (Cookies.get("skip-dialog") === "true") {
+      window.location.href = redirectUrl;
+    } else {
+      onGetStarted(redirectUrl);
+    }
+  };
+
   return (
     <div>
       <MetaTags
@@ -161,9 +172,9 @@ const MainPage = ({ onGetStarted }) => {
         <div className={styles["button-container"]}>
           <span
             className={`button button-hurple button-pushLeft ${styles.button}`}
-            onClick={onGetStarted}
+            onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
           >
-            Get Started
+            Get Started (Instance is closed until futher notice)
           </span>
           <a
             href="https://github.com/oldcordapp/OldCordV3"
@@ -202,7 +213,8 @@ const MainPage = ({ onGetStarted }) => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <a
-                    href={`https://staging.oldcordapp.com/launch?release_date=${img.releaseDateCode}`}
+                    href="#"
+                    onClick={(e) => handleImageClick(e, img.releaseDateCode)}
                   >
                     <Image src={img.src} alt={`Image ${index}`} />
                   </a>
@@ -286,9 +298,9 @@ const MainPage = ({ onGetStarted }) => {
             </span>
             <span
               className={`button button-hurple ${styles.button} ${styles["upsell-button"]}`}
-              onClick={onGetStarted}
+              onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
             >
-              Get Started
+              Get Started (Instance is closed until futher notice)
             </span>
           </div>
         </div>

@@ -2,39 +2,39 @@ import styles from "./dialogBox.module.css";
 import Cookies from "js-cookie";
 import { useState } from "react";
 
-const DialogBox = ({
-  isOpen,
-  onClose,
-  onCheckboxChange,
-  isChecked,
-  onOpenSelector,
-}) => {
-  const [isCheckedSecond, setIsCheckedSecond] = useState(false);
+const DialogBox = ({ isOpen, onClose, redirectUrl }) => {
+  const [checks, setChecks] = useState({
+    terms: false,
+    guidelines: false
+  });
 
-  const handleCheckboxChange = (event) => {
-    const checked = event.target.checked;
-    onCheckboxChange(checked);
+  const handleCheckboxChange = (field) => (event) => {
+    setChecks(prev => ({
+      ...prev,
+      [field]: event.target.checked
+    }));
   };
 
-  const handleSecondCheckboxChange = (event) => {
-    setIsCheckedSecond(event.target.checked);
-  };
-
-  const handleOpenSelector = () => {
-    Cookies.set("skip-dialog", true);
-    onOpenSelector();
+  const handleContinue = () => {
+    if (checks.terms && checks.guidelines) {
+      Cookies.set("skip-dialog", "true");
+      // Make sure redirectUrl exists before redirecting
+      if (redirectUrl) {
+        window.location.href = redirectUrl;
+      }
+    }
   };
 
   if (!isOpen) return null;
 
+  const canContinue = checks.terms && checks.guidelines;
+
   return (
     <div className={styles.overlay} onClick={onClose}>
       <div className={styles.box} onClick={(e) => e.stopPropagation()}>
-        <div className={styles["header"]}>
+        <div className={styles.header}>
           <span className={styles.title}>Before you use Oldcord...</span>
-          <span className={styles["close-button"]} onClick={onClose}>
-            &times;
-          </span>
+          <span className={styles["close-button"]} onClick={onClose}>&times;</span>
         </div>
         <span className={styles.subtitle}>
           Oldcord is still under development, so some features may be incomplete
@@ -54,43 +54,30 @@ const DialogBox = ({
           <label className={styles.checkbox}>
             <input
               type="checkbox"
-              checked={isChecked}
-              onChange={handleCheckboxChange}
+              checked={checks.terms}
+              onChange={handleCheckboxChange('terms')}
             />
-            <span className={styles.checkmark} />I understand and will report
-            issues as constructively as possible. Complaining may result in my
-            account being banned without the possibility of appeal.
+            <span className={styles.checkmark} />
+            I understand and will report issues constructively. Complaining may result in account termination.
           </label>
         </div>
-        <div
-          className={styles["i-understand"]}
-          style={{ marginBottom: "20px" }}
-        >
+        <div className={styles["i-understand"]} style={{ marginBottom: "20px" }}>
           <label className={styles.checkbox}>
             <input
               type="checkbox"
-              checked={isCheckedSecond}
-              onChange={handleSecondCheckboxChange}
+              checked={checks.guidelines}
+              onChange={handleCheckboxChange('guidelines')}
             />
-            <span className={styles.checkmark} />I have read the T&C, Privacy
-            Policy and Instance Guidelines.
+            <span className={styles.checkmark} />
+            I have read the T&C, Privacy Policy and Instance Guidelines.
           </label>
         </div>
         <div className={styles["button-container"]}>
           <span
-            className={`button ${styles.button} ${
-              !(isChecked && isCheckedSecond)
-                ? "button-disabled"
-                : "button-hurple"
-            }`}
-            onClick={
-              !(isChecked && isCheckedSecond) ? null : handleOpenSelector
-            }
-            style={{
-              pointerEvents: !(isChecked && isCheckedSecond) ? "none" : "auto",
-            }}
+            className={`button ${styles.button} ${canContinue ? 'button-hurple' : 'button-disabled'}`}
+            onClick={canContinue ? handleContinue : null}
           >
-            Go to selector
+            Continue
           </span>
         </div>
       </div>

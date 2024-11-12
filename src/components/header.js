@@ -30,7 +30,10 @@ const Header = ({ onGetStarted, textColorClass }) => {
           <li className={`${styles["list-item"]} ${styles["list-item-push-right"]}`}>
             <a href="https://github.com/oldcordapp"><GitHub className={styles["list-item-socials"]} /></a>
           </li>
-          <li className={`${styles["list-item"]} ${styles["open-button"]}`} onClick={onGetStarted}>
+          <li 
+            className={`${styles["list-item"]} ${styles["open-button"]}`} 
+            onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
+          >
             Open Selector
           </li>
         </ul>
