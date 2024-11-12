@@ -4,8 +4,10 @@ import sectionStyles from "./sections.module.css";
 import { ReactComponent as Logo } from "../assets/logo.svg";
 
 import MetaTags from "../components/metaTags.js";
+import { useOutletContext } from "react-router-dom";
 
-const About = ({ onGetStarted }) => {
+const About = () => {
+  const [onGetStarted] = useOutletContext();
   return (
     <div>
       <MetaTags

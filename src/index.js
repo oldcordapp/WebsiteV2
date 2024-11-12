@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext, useCallback } from "react";
 import ReactDOM from "react-dom/client";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
-import Cookies from "js-cookie";
+import { BrowserRouter, Route, Routes, useLocation, Outlet } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import Cookies from "js-cookie";
 
 import "./index.css";
 import Header from "./components/header.js";
@@ -26,100 +21,72 @@ import CookiePolicy from "./pages/cookies.js";
 
 import FourOhFour from "./pages/404.js";
 
-const App = () => {
-  const [dialog, setDialog] = useState({
-    isOpen: false,
-    redirectUrl: ""
-  });
+const GetStartedContext = createContext();
 
-  const [isChecked, setChecked] = useState(false);
-  const [textColorClass, setTextColorClass] = useState("");
+const Layout = () => {
+  const location = useLocation();
+  const [dialog, setDialog] = useState({ isOpen: false, redirectUrl: "" });
+  const [textClass, setTextClass] = useState(""); 
+  
+  useEffect(() => {
+    const bgClass = location.pathname === "/" ? "bg-dark" : 
+                   location.pathname === "/404" ? "bg-white" : "bg-hurple";
+    const newTextClass = location.pathname === "/" ? "text-dark-gray" : 
+                        location.pathname === "/404" ? "text-black" : "text-light-gray";
+                     
+    document.body.className = bgClass;
+    setTextClass(newTextClass);
+    return () => document.body.className = "";
+  }, [location]);
 
-  const handleGetStarted = (redirectUrl = "https://staging.oldcordapp.com/selector") => {
+  const handleGetStarted = useCallback((redirectUrl) => {
     if (Cookies.get("skip-dialog") === "true") {
       window.location.href = redirectUrl;
     } else {
       setDialog({ isOpen: true, redirectUrl });
     }
-  };
-
-  const handleCheckboxChange = (checked) => {
-    setChecked(checked);
-  };
-
-  const handleCloseDialog = () => {
-    setDialog({ isOpen: false, redirectUrl: "" });
-    setChecked(false);
-  };
-
-  const location = useLocation();
-
-  useEffect(() => {
-    const path = location.pathname;
-    document.body.className = "";
-    setTextColorClass(""); // Reset text color class
-
-    switch (path) {
-      case "/":
-        document.body.classList.add("bg-dark");
-        setTextColorClass("text-dark-gray");
-        break;
-      case "/download":
-      case "/terms":
-      case "/privacy":
-      case "/guidelines":
-      case "/about":
-      case "/thanks":
-      case "/cookies":
-        document.body.classList.add("bg-hurple");
-        setTextColorClass("text-light-gray");
-        break;
-      default:
-        document.body.classList.add("bg-white");
-        setTextColorClass("text-black");
-    }
-  }, [location.pathname]);
+  }, []);
 
   return (
-    <>
-      <Header onGetStarted={handleGetStarted} textColorClass={textColorClass} />
+    <GetStartedContext.Provider value={handleGetStarted}>
+      <Header onGetStarted={handleGetStarted} textColorClass={textClass} />
       <Notice />
-      <Routes>
-        <Route
-          path="/"
-          element={<MainPage onGetStarted={handleGetStarted} />}
-        />
-        <Route path="/download" element={<Download />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/guidelines" element={<Guidelines />} />
-        <Route path="/cookies" element={<CookiePolicy />} />
-        <Route
-          path="/about"
-          element={<About onGetStarted={handleGetStarted} />}
-        />
-        <Route path="/thanks" element={<Thanks />} />
-        <Route path="*" element={<FourOhFour />} />
-      </Routes>
-      <Footer onGetStarted={handleGetStarted} textColorClass={textColorClass} />
-      <DialogBox
-        isOpen={dialog.isOpen}
-        onClose={handleCloseDialog}
-        onCheckboxChange={handleCheckboxChange}
-        isChecked={isChecked}
-        redirectUrl={dialog.redirectUrl}
+      <Outlet context={[handleGetStarted]} />
+      <Footer onGetStarted={handleGetStarted} textColorClass={textClass} />
+      <DialogBox 
+        {...dialog} 
+        onClose={() => setDialog(prev => ({ ...prev, isOpen: false }))} 
       />
-    </>
+    </GetStartedContext.Provider>
   );
 };
+
+// Export context for use in other components
+export { GetStartedContext };
+
+const App = () => (
+  <Routes>
+    <Route element={<Layout />}>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/download" element={<Download />} />
+      <Route path="/terms" element={<Terms />} />
+      <Route path="/privacy" element={<Privacy />} />
+      <Route path="/guidelines" element={<Guidelines />} />
+      <Route path="/cookies" element={<CookiePolicy />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/thanks" element={<Thanks />} />
+      <Route path="*" element={<FourOhFour />} />
+    </Route>
+  </Routes>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      <Router>
+      <BrowserRouter>
         <App />
-      </Router>
+      </BrowserRouter>
     </HelmetProvider>
   </React.StrictMode>
 );
