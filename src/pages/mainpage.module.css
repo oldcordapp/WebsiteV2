@@ -105,9 +105,10 @@
 
 .upsell-section-content img,
 .upsell-section-content svg {
-  height: auto;
+  height: 400px;
   width: 600px;
   max-width: 600px;
+  object-fit: contain;
   margin: 100px;
 }
 

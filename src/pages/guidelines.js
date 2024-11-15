@@ -1,6 +1,5 @@
 import styles from "./legal.module.css";
 import sectionStyles from "./sections.module.css";
-
 import MetaTags from "../components/metaTags.js";
 
 const Guidelines = () => {
@@ -11,7 +10,7 @@ const Guidelines = () => {
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Instance Guidelines</div>
           <div className={`${styles["tagline-subtitle"]} text-light-gray`}>
-            Last Updated: September 13th, 2024 | Effective: (Not Decided Yet)
+            Last Updated: November 15th, 2024 | Effective: TBD
           </div>
         </div>
       </div>
@@ -19,203 +18,156 @@ const Guidelines = () => {
         <div className={sectionStyles["section-content"]}>
           <span className={sectionStyles.title}>Introduction</span>
           <span className={sectionStyles.text}>
-            Welcome to Oldcord! We strive to create a safe and enjoyable
-            environment for all users. Our Instance Guidelines ensure everyone
-            can express themselves and find community — but not at the expense
-            of anyone else.
+            Welcome to Oldcord! We created Oldcord to be a safe and enjoyable
+            environment where everyone can express themselves and find community
+            — but not at the expense of anyone else.
           </span>
           <span className={sectionStyles.text}>
-            These Guidelines explain what isn't allowed on Oldcord. Everyone
-            must follow these rules, and they apply to all parts of our
+            These Guidelines explain what isn't allowed on Oldcord. Everyone on
+            Oldcord must follow these rules, and they apply to all parts of our
             Instance, including your content, behaviors, and interactions.
-          </span>
-          <span className={sectionStyles.text}>
             Please note that this only applies to our Instance; third-party
             instances might have different guidelines.
+          </span>
+          <span className={sectionStyles.text}>
+            When we discover a violation of these Guidelines, we will take
+            appropriate enforcement steps, including issuing warnings, removing
+            content, or suspending/removing violative accounts.
+          </span>
+          <span className={sectionStyles.text}>
+            If you come across content that appears to break these Guidelines,
+            please report it to us.
           </span>
           <span className={sectionStyles.title}>Respect Each Other</span>
           <ol>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Harassment</span>
-              <br />
-              Do not promote, coordinate, or engage in harassment. This includes
-              sustained bullying, sexual harassment, or doxxing individuals.
+              Do not promote, coordinate, or engage in harassment. We do not
+              allow any type of harassing behavior, including sustained
+              bullying, sexual harassment, or coordinating harassment against
+              other users.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Threats</span>
-              <br />
               Do not threaten to harm another individual or group of people.
               This includes direct, indirect, and suggestive threats.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Doxxing</span>
-              <br />
               Do not share or threaten to share personally identifiable
-              information (PII) of any individual without consent, including the
-              facilitation of doxxing.
+              information (PII) of any individual without consent. This includes
+              providing services that facilitate doxxing.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Hate Speech</span>
-              <br />
-              Hate speech and hateful conduct are not permitted. This includes
-              any form of expression that promotes hatred or violence against
-              individuals based on their protected characteristics.
+              Do not use hate speech or engage in hateful conduct. We consider
+              hate speech to be any form of expression that promotes hatred or
+              violence against individuals based on their protected
+              characteristics.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Violent Extremism</span>
-              <br />
               Do not organize, promote, or support violent extremism. This
-              includes glorifying violence or coordinating violent acts.
+              includes glorifying violence, coordinating violent acts, or
+              promoting conspiracy theories that could encourage violence
+              against others.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Child Safety</span>
-              <br />
               Do not solicit, share, or distribute content that depicts or
               promotes child sexual abuse. We report such content to the
               appropriate authorities.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Underage Conduct</span>
-              <br />
               If you are under the age of 18, do not engage in any conduct that
               puts your online or physical safety at risk.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>
-                Sexual Conduct with Minors
-              </span>
-              <br />
               Do not solicit sexual content from or engage in any sexual conduct
               with anyone under the age of 18.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Explicit Content</span>
-              <br />
               Do not make sexually explicit content available to anyone under
               the age of 18. All channels containing explicit content must be
               clearly labeled.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Non-Consensual Media</span>
-              <br />
               Do not share or distribute sexually explicit content of others
-              without their consent.
+              without their consent. This includes the non-consensual
+              distribution of intimate media.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Self-Harm</span>
-              <br />
-              Do not share content that glorifies or promotes self-harm or
-              suicide.
+              Do not share content that glorifies or promotes suicide or
+              self-harm.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Graphic Content</span>
-              <br />
               Do not share real media depicting excessive violence or animal
-              harm.
-            </li>
-            <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Disturbance</span>
-              <br />
-              Do not disturb the atmosphere of Oldcord or cause disturbances
-              within the community.
+              harm, especially with the intention to harass or shock others.
             </li>
           </ol>
           <span className={sectionStyles.title}>Respect Oldcord</span>
-          <ol start="14">
+          <ol start="13">
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Spam</span>
-              <br />
-              Do not send unsolicited bulk messages or spam others, or
+              Do not send unsolicited bulk messages (spam) to others, or
               facilitate this activity.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Self-Bots</span>
-              <br />
               Self-bots are allowed as long as they do not abuse the API.
+              However, each account must be primarily associated with a human
+              user.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Inauthentic Engagement</span>
-              <br />
-              Do not engage with our service in a deceptive manner, including
-              artificially inflating user engagement.
+              Do not engage with our service in an inauthentic way. This
+              includes artificially inflating user engagement.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Asset Manipulation</span>
-              <br />
-              Do not sell or purchase Oldcord accounts, usernames, or other
-              assets.
+              Do not sell or purchase Oldcord assets, including accounts,
+              usernames, or other platform assets.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Misinformation</span>
-              <br />
               Do not share false or misleading information that could result in
-              harm.
+              physical or societal harm. We may remove content if we reasonably
+              believe its spread could endanger public health, safety, or civic
+              processes.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>
-                Identity Misrepresentation
-              </span>
-              <br />
-              Do not misrepresent your identity in a deceptive or harmful way.
+              Do not misrepresent your identity on Oldcord in a deceptive or
+              harmful way. This includes creating fake profiles and attempts to
+              impersonate others.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Evading Enforcement</span>
-              <br />
               Do not evade enforcement actions by creating new accounts or
               communities after being removed.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Security Compromise</span>
-              <br />
               Do not engage in activities that could compromise the security of
-              an account or network.
+              an account or network. This includes phishing, malware
+              distribution, and denial-of-service attacks.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Financial Scams</span>
-              <br />
-              Do not use Oldcord for promoting or executing financial scams.
+              Do not use Oldcord to promote or execute financial scams.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Fraudulent Activities</span>
-              <br />
-              Do not engage in fraudulent activities or facilitate fraud.
+              Do not engage in fraudulent activities or facilitate fraud. This
+              includes coordinated efforts to defraud businesses, price gouging,
+              or selling counterfeit goods.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>False Reports</span>
-              <br />
               Do not submit false or misleading reports to Oldcord support.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>
-                Treating Oldcord developers
-              </span>
-              <br />
-              Do not treat Oldcord developers in an inhumane way, nor treat them
+              Do not treat Oldcord developers in an inhumane way or treat them
               as "tech support".
             </li>
           </ol>
-          <span className={sectionStyles.title}>Follow the law</span>
-          <ol start="26">
+          <span className={sectionStyles.title}>Follow the Law</span>
+          <ol start="25">
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Intellectual Property</span>
-              <br />
               Do not share content that violates anyone's intellectual property
               rights.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Illegal Goods</span>
-              <br />
               Do not organize, promote, or engage in the sale of regulated or
               dangerous goods.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Illegal Gambling</span>
-              <br />
               Do not coordinate or participate in illegal gambling activities.
             </li>
             <li className={sectionStyles.text}>
-              <span className={sectionStyles.bold}>Illegal Activities</span>
-              <br />
               Do not engage in any other illegal activities, such as human
               trafficking or solicitation.
             </li>
@@ -228,17 +180,18 @@ const Guidelines = () => {
           </span>
           <span className={sectionStyles.title}>Evolution of Guidelines</span>
           <span className={sectionStyles.text}>
-            These Guidelines may evolve over time. While we will do our best to
-            notify you of any updates, it is your responsibility to adhere to
-            the spirit of these rules and help keep Oldcord a safe and enjoyable
-            space for everyone.
+            These Guidelines will continue to evolve over time. While we will do
+            our best to notify you of any updates, it is your responsibility to
+            stay informed and follow both the letter and spirit of these rules.
+            We reserve the right to take action against behavior that violates
+            the spirit of these Guidelines, even if not explicitly covered in
+            the current version.
           </span>
           <span className={sectionStyles.title}>Ending Words</span>
           <span className={sectionStyles.text}>
-            These Guidelines are not exhaustive, and we reserve the right to
-            terminate your account for any valid reason. Just be a good person —
-            treat others how you want to be treated — and we won't get in your
-            way. Thank you for your cooperation!
+            Just be a good person — treat others how you want to be treated —
+            and we won't get in your way. Thank you for helping keep Oldcord a
+            safe and enjoyable space for everyone.
           </span>
         </div>
       </div>

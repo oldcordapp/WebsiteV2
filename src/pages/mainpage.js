@@ -174,7 +174,9 @@ const MainPage = () => {
         <div className={styles["button-container"]}>
           <span
             className={`button button-hurple button-pushLeft ${styles.button}`}
-            onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
+            onClick={() =>
+              onGetStarted("https://staging.oldcordapp.com/selector")
+            }
           >
             Get Started
           </span>
@@ -231,13 +233,15 @@ const MainPage = () => {
             <img src={selector} />
             <div>
               <span className={styles["upsell-title"]}>
-                Select your own build version
+                Woah, a time machine???
               </span>
               <span className={styles["upsell-text"]}>
-                Looking to take a trip back to 2015? Eager to explore April
-                Fools' features like @someone? The selector lets you rewind time
-                and experience how the instant messaging service you love has
-                evolved over the years.
+                Want to relive the glory days of chatting? We gotchu fam! Jump
+                back to any version you want - from the OG 2015 vibes to that
+                wild moment when @someone came to party (and definitely didn't
+                cause any chaos... totally... 100%... maybe). Each version comes
+                with its own aesthetic and quirks. It's basically time travel,
+                but for your chat!
               </span>
             </div>
           </div>
@@ -245,12 +249,16 @@ const MainPage = () => {
         <div className={styles["upsell-section-dark"]}>
           <div className={styles["upsell-section-content"]}>
             <div>
-              <span className={styles["upsell-title"]}>Simplier is better</span>
+              <span className={styles["upsell-title"]}>
+                No more flashbang profiles!!!
+              </span>
               <span className={styles["upsell-text"]}>
-                Are you fed up with clicking on user profiles that make your
-                eyes go blind? Or perhaps those flashy profile picture
-                decorations make you want to gag? With Oldcord, you can finally
-                enjoy a clutter-free experience without all that eye candy!
+                Remember the simple life? When checking profiles didn't feel
+                like staring directly into the sun? WELL GUESS WHAT - we brought
+                back that sweet, sweet simplicity! No more rainbow lightning
+                storm profile themes or spinning galaxy backgrounds. Just pure,
+                clean, beautiful interfaces that won't make your retinas cry.
+                Your eyes can thank us later (⌐■_■)
               </span>
             </div>
             <img src={simple} />
@@ -261,10 +269,43 @@ const MainPage = () => {
             <img src={atsomeone} />
             <div>
               <span className={styles["upsell-title"]}>
-                Welcome to the marketing page
+                BRAIN BRAIN BRAIN BRAIN @someone IS HERE!
               </span>
-              <span className={styles["upsell-text"]}>
-                Help I've fallen and I cannot get up I need @someone!
+              <span
+                className={styles["upsell-text"]}
+                style={{ marginBottom: "5px", fontStyle: "italic" }}
+              >
+                *glitch intensifies*
+              </span>
+              <span
+                className={styles["upsell-text"]}
+                style={{ marginBottom: "5px" }}
+              >
+                INTRODUCING: The most RANDOM feature you never knew you needed!
+                Just type @someone and BOOM! Random chaos! Random pings! Random
+                EVERYTHING!
+              </span>
+              <span
+                className={styles["upsell-text"]}
+                style={{ marginBottom: "5px" }}
+              >
+                HELP! I've fallen into randomness and I need @someone!
+                EEEEEEEEEEEEEEEEEEEEEEEE-{" "}
+                <span style={{ fontStyle: "italic" }}>*glitch noises*</span>
+              </span>
+              <span
+                className={styles["upsell-text"]}
+                style={{ marginBottom: "5px" }}
+              >
+                Will it ping your local meme master? That person who's been AFK
+                since forever? WHO KNOWS! That's the beauty of @someone!
+              </span>
+              <span
+                className={styles["upsell-text"]}
+                style={{ marginBottom: "5px" }}
+              >
+                DO IT DO IT DO IT DO IT (Warning: May cause excessive randomness
+                and spontaneous ping parties)
               </span>
             </div>
           </div>
@@ -272,19 +313,22 @@ const MainPage = () => {
         <div className={styles["upsell-section-dark"]}>
           <div className={styles["upsell-section-content"]}>
             <div>
-              <span className={styles["upsell-title"]}>Take back control</span>
+              <span className={styles["upsell-title"]}>
+                Run your own server (for real tho)
+              </span>
               <span className={styles["upsell-text"]}>
-                Curious about what it's like to manage an instant messaging
-                service? Oldcord is free and open source*, allowing you to set
-                up your own Oldcord instance in no time!
+                Want to host your own slice of chat history? NOW YOU CAN! Our
+                open-source* server implementation lets you set up faster than
+                you can say "wumpus". It's powerful, it's FREE, and it's
+                probably not haunted!
               </span>
               <span className={styles["upsell-small-print"]}>
-                *Clients coming from a certain instant messaging service are not
-                open source. Instead they are downloaded and launched in the
-                browser by the bootstrapper, with QoL features and bug fixes. We
-                reverse-engineered the API and websocket responses using
-                publicly available sources, and the server code does not include
-                any code from that service.
+                *Super important legal stuff that's actually cool: The client
+                runs right in your browser (not hosted!) - we're basically digital
+                archaeologists, digging through public artifacts to recreate
+                history! Everything's built through reverse engineering using
+                only public resources, keeping things 100% legit and above
+                board. No sketchy modified code distribution here!
               </span>
             </div>
             <OpenSource style={{ color: "#06152a" }} />
@@ -300,7 +344,9 @@ const MainPage = () => {
             </span>
             <span
               className={`button button-hurple ${styles.button} ${styles["upsell-button"]}`}
-              onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
+              onClick={() =>
+                onGetStarted("https://staging.oldcordapp.com/selector")
+              }
             >
               Get Started
             </span>
