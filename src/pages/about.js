@@ -168,14 +168,16 @@ const About = () => {
             <span className={styles["upsell-text"]}>
               Convinced? Use Oldcord now and experience the nostalgia!
             </span>
-            <span
+            <a
+              href="https://staging.oldcordapp.com/selector"
               className={`button button-hurple ${styles.button} ${styles["upsell-button"]}`}
-              onClick={() =>
-                onGetStarted("https://staging.oldcordapp.com/selector")
-              }
+              onClick={(e) => {
+                e.preventDefault();
+                onGetStarted("https://staging.oldcordapp.com/selector");
+              }}
             >
               Get Started
-            </span>
+            </a>
           </div>
         </div>
       </div>

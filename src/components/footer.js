@@ -76,13 +76,18 @@ const Footer = ({ onGetStarted, textColorClass }) => {
               Use Oldcord now!
             </span>
           </div>
-          <span
-            className={`button button-hurple ${styles.button}`}
-            onClick={() =>
-              onGetStarted("https://staging.oldcordapp.com/selector")
-            }
-          >
-            Get Started
+          <span>
+            <a
+              href="https://staging.oldcordapp.com/selector"
+              onClick={(e) => {
+                e.preventDefault();
+                onGetStarted("https://staging.oldcordapp.com/selector");
+              }}
+            >
+              <span className={`button button-hurple ${styles.button}`}>
+                Get Started
+              </span>
+            </a>
           </span>
         </div>
         <span

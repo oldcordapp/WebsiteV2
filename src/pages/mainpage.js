@@ -172,14 +172,16 @@ const MainPage = () => {
           </div>
         </div>
         <div className={styles["button-container"]}>
-          <span
+          <a
+            href="https://staging.oldcordapp.com/selector"
             className={`button button-hurple button-pushLeft ${styles.button}`}
-            onClick={() =>
-              onGetStarted("https://staging.oldcordapp.com/selector")
-            }
+            onClick={(e) => {
+              e.preventDefault();
+              onGetStarted("https://staging.oldcordapp.com/selector");
+            }}
           >
             Get Started
-          </span>
+          </a>
           <a
             href="https://github.com/oldcordapp/OldCordV3"
             className="button-link"
@@ -324,10 +326,10 @@ const MainPage = () => {
               </span>
               <span className={styles["upsell-small-print"]}>
                 *Super important legal stuff that's actually cool: The client
-                runs right in your browser (not hosted!) - we're basically digital
-                archaeologists, digging through public artifacts to recreate
-                history! Everything's built through reverse engineering using
-                only public resources, keeping things 100% legit and above
+                runs right in your browser (not hosted!) - we're basically
+                digital archaeologists, digging through public artifacts to
+                recreate history! Everything's built through reverse engineering
+                using only public resources, keeping things 100% legit and above
                 board. No sketchy modified code distribution here!
               </span>
             </div>
@@ -342,14 +344,16 @@ const MainPage = () => {
             <span className={styles["upsell-text"]}>
               Experience non-bloat messaging nostalgia!
             </span>
-            <span
+            <a
+              href="https://staging.oldcordapp.com/selector"
               className={`button button-hurple ${styles.button} ${styles["upsell-button"]}`}
-              onClick={() =>
-                onGetStarted("https://staging.oldcordapp.com/selector")
-              }
+              onClick={(e) => {
+                e.preventDefault();
+                onGetStarted("https://staging.oldcordapp.com/selector");
+              }}
             >
               Get Started
-            </span>
+            </a>
           </div>
         </div>
       </div>
