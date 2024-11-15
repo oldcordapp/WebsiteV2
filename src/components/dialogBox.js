@@ -26,7 +26,7 @@ const DialogBox = ({ isOpen, onClose, redirectUrl }) => {
 
   const handleContinue = useCallback(() => {
     if (canContinue) {
-      Cookies.set("skip-dialog", "true", { expires: 365 });
+      Cookies.set("legal_agreed", "true", { expires: 365 });
       redirectUrl && (window.location.href = redirectUrl);
     }
   }, [canContinue, redirectUrl]);

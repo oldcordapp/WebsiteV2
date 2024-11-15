@@ -55,7 +55,7 @@ const About = () => {
               solutions
             </li>
             <li className={sectionStyles.text}>
-              Our platform is fully public, with no invite codes needed
+              Our instance is fully public, with no invite codes needed
             </li>
             <li className={sectionStyles.text}>
               All assets are downloaded through our archival CDN
@@ -135,7 +135,8 @@ const About = () => {
             </li>
           </ul>
           <span className={sectionStyles.text}>
-            We also have partners helping to preserve the service's history.
+            We also have our partners helping to preserve the service's history.
+            (Some are also working on Oldcord!)
           </span>
           <span className={sectionStyles.text}>
             Oldcord is open source, allowing anyone to contribute to our
@@ -154,7 +155,7 @@ const About = () => {
             You can also host your own instance of Oldcord by following the
             README file in our GitHub repository!
           </span>
-          <span className={sectionStyles.text} style={{ fontStyle: "italic" }}>
+          <span className={`${sectionStyles.text} ${sectionStyles.bold}`} style={{ fontStyle: "italic" }}>
             Note: Other instances may require an invite.
           </span>
           <hr />

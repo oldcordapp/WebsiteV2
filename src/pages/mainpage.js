@@ -151,7 +151,7 @@ const MainPage = () => {
   const handleImageClick = (e, releaseDateCode) => {
     e.preventDefault();
     const redirectUrl = `https://staging.oldcordapp.com/launch?release_date=${releaseDateCode}`;
-    if (Cookies.get("skip-dialog") === "true") {
+    if (Cookies.get("legal_agreed") === "true") {
       window.location.href = redirectUrl;
     } else {
       onGetStarted(redirectUrl);
@@ -277,7 +277,7 @@ const MainPage = () => {
                 className={styles["upsell-text"]}
                 style={{ marginBottom: "5px", fontStyle: "italic" }}
               >
-                *glitch intensifies*
+                glitch intensifies
               </span>
               <span
                 className={styles["upsell-text"]}
@@ -293,7 +293,7 @@ const MainPage = () => {
               >
                 HELP! I've fallen into randomness and I need @someone!
                 EEEEEEEEEEEEEEEEEEEEEEEE-{" "}
-                <span style={{ fontStyle: "italic" }}>*glitch noises*</span>
+                <span style={{ fontStyle: "italic" }}>glitch noises</span>
               </span>
               <span
                 className={styles["upsell-text"]}
@@ -325,12 +325,17 @@ const MainPage = () => {
                 probably not haunted!
               </span>
               <span className={styles["upsell-small-print"]}>
-                *Super important legal stuff that's actually cool: The client
-                runs right in your browser (not hosted!) - we're basically
-                digital archaeologists, digging through public artifacts to
-                recreate history! Everything's built through reverse engineering
-                using only public resources, keeping things 100% legit and above
-                board. No sketchy modified code distribution here!
+                *Legal Shenanigans (but like, the good kind): Client-side magic
+                happens right in your browser - our bootloader fetches files,
+                patches them on the fly, and runs everything locally!
+                Server-side? 100% our own reverse-engineered code built from
+                public archaeology - no yoinking their code! We're just
+                time-traveling researchers exploring your chat app's rad past!
+                While this is still in that gray area like other mods, we keep
+                it squeaky clean by running everything locally and focusing
+                purely on historical exploration. Think of us as your friendly
+                neighborhood chat app museum! *polishes archaeology badge* 🏺
+                Check out our about page for the full scoop!
               </span>
             </div>
             <OpenSource style={{ color: "#06152a" }} />

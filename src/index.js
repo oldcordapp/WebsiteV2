@@ -40,7 +40,7 @@ const Layout = () => {
   }, [location]);
 
   const handleGetStarted = useCallback((redirectUrl) => {
-    if (Cookies.get("skip-dialog") === "true") {
+    if (Cookies.get("legal_agreed") === "true") {
       window.location.href = redirectUrl;
     } else {
       setDialog({ isOpen: true, redirectUrl });
