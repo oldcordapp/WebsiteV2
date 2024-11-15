@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const Footer = ({ onGetStarted, textColorClass }) => {
   return (
-    <div className={`${styles.section} ${textColorClass} ${styles[textColorClass]}`}>
+    <div
+      className={`${styles.section} ${textColorClass} ${styles[textColorClass]}`}
+    >
       <div className={styles.content}>
-        <div
-          className={`${styles.navigation}`}
-        >
+        <div className={`${styles.navigation}`}>
           <div>
             <Link to="/">
               <Hurple className={styles.logo} />
@@ -78,7 +78,9 @@ const Footer = ({ onGetStarted, textColorClass }) => {
           </div>
           <span
             className={`button button-hurple ${styles.button}`}
-            onClick={() => onGetStarted("https://staging.oldcordapp.com/selector")}
+            onClick={() =>
+              onGetStarted("https://staging.oldcordapp.com/selector")
+            }
           >
             Get Started
           </span>
@@ -88,9 +90,9 @@ const Footer = ({ onGetStarted, textColorClass }) => {
           style={{ marginTop: "40px" }}
         >
           Oldcord is an old Discord historical preservation/revival project and
-          is not affiliated with or endorsed by Discord, Inc. This website has
-          been built from the ground up and does not incorporate any code from
-          Discord.
+          is not affiliated with or endorsed by Discord, Inc. This website and
+          related projects have been built from the ground up and does not
+          incorporate any code from Discord.
         </span>
         <span
           className={`${styles.notice} ${textColorClass} ${styles[textColorClass]}`}
