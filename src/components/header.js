@@ -14,7 +14,7 @@ const NAV_ITEMS = [
 
 const SOCIAL_LINKS = [
   { href: "https://x.com/oldcord", Icon: Chirp },
-  { href: "https://discord.gg/VdxA4Dh8rq", Icon: Clyde },
+  // { href: "https://discord.gg/VdxA4Dh8rq", Icon: Clyde },
   { href: "https://github.com/oldcordapp", Icon: GitHub },
 ];
 
