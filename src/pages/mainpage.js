@@ -178,7 +178,7 @@ const MainPage = () => {
             onClick={(e) => {
               e.preventDefault();
               onGetStarted("https://staging.oldcordapp.com/selector");
-            }}
+            }} style={{'display' : 'none'}}
           >
             Get Started
           </a>
@@ -355,7 +355,7 @@ const MainPage = () => {
               onClick={(e) => {
                 e.preventDefault();
                 onGetStarted("https://staging.oldcordapp.com/selector");
-              }}
+              }} style={{'display' : 'none'}}
             >
               Get Started
             </a>

@@ -60,7 +60,7 @@ const Header = ({ onGetStarted, textColorClass }) => (
           onClick={(e) => {
             e.preventDefault();
             onGetStarted("https://staging.oldcordapp.com/selector");
-          }}
+          }} style={{'display' : 'none'}}
         >
           <li className={`${styles["list-item"]} ${styles["open-button"]}`}>
             Open Selector
