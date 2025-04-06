@@ -106,6 +106,14 @@ const Footer = ({ onGetStarted, textColorClass }) => {
           (along with others) belong to their respective owners. In short, they
           are not ours.
         </span>
+        <span
+          className={`${styles.notice} ${textColorClass} ${styles[textColorClass]}`}
+        >
+          Nebula Sans is a font created by Nebula Entertainment & Broadcasting
+          LLC used as a drop-in replacement for Whitney (which Discord used before
+          switching to gg sans in 2022) and is licensed under the SIL Open Font
+          License, Version 1.1.
+        </span>
       </div>
     </div>
   );

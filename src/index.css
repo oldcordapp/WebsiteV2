@@ -1,6 +1,103 @@
+/* Nebula Sans Font Declarations - Based of 2018 Discord Whitney Declarations, 90% scale down is required since Nebula Sans is larger than Whitney */
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-Book.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-BookItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-MediumItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-Semibold.woff2') format('woff2');
+  font-weight: 650;
+  font-style: normal;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-SemiboldItalic.woff2') format('woff2');
+  font-weight: 650;
+  font-style: italic;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  size-adjust: 90%;
+}
+
+@font-face {
+  font-family: 'Nebula Sans';
+  src: url('/public/fonts/NebulaSans-BlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  size-adjust: 90%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: 'Nebula Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
@@ -38,7 +135,7 @@ body {
 .button {
   border-radius: 3px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   user-select: none;
   text-align: center;
