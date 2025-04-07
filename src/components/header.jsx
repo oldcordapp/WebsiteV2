@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-
 import styles from "./header.module.css";
 
-import { ReactComponent as Logo } from "../assets/logo.svg";
-import { ReactComponent as Clyde } from "../assets/clyde.svg";
-import { ReactComponent as Chirp } from "../assets/chirp.svg";
-import { ReactComponent as GitHub } from "../assets/github.svg";
+import Logo from "../assets/logo.svg?react";
+import Clyde from "../assets/clyde.svg?react";
+import Chirp from "../assets/chirp.svg?react";
+import GitHub from "../assets/github.svg?react";
 
 const NAV_ITEMS = [
   { to: "download", label: "Download" },

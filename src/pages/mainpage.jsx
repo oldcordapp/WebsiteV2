@@ -11,7 +11,7 @@ import image2018 from "../assets/images/atsomeone.png";
 import selector from "../assets/images/selector.png";
 import simple from "../assets/images/user_profile.png";
 import atsomeone from "../assets/images/i_need_atsomeone.png";
-import { ReactComponent as OpenSource } from "../assets/opensource.svg";
+import OpenSource from "../assets/opensource.svg?react";
 import { useOutletContext } from "react-router-dom";
 
 const width = 200;

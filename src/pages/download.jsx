@@ -1,6 +1,6 @@
 import styles from "./download.module.css";
 
-import MetaTags from '../components/metaTags.js';
+import MetaTags from '../components/metaTags.jsx';
 
 const Download = () => {
   return (

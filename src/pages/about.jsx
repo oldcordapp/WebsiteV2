@@ -1,7 +1,7 @@
 import styles from "./about.module.css";
 import sectionStyles from "./sections.module.css";
 
-import { ReactComponent as Logo } from "../assets/logo.svg";
+import Logo from "../assets/logo.svg?react";
 
 import MetaTags from "../components/metaTags.jsx";
 import { useOutletContext } from "react-router-dom";

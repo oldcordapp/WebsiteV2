@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import { ReactComponent as Hurple } from "../assets/hurple.svg";
+import Hurple from "../assets/hurple.svg?react";
 import { Link } from "react-router-dom";
 
 const Footer = ({ onGetStarted, textColorClass }) => {

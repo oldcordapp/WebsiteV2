@@ -3,8 +3,7 @@ import { useOutletContext } from "react-router-dom";
 
 import styles from "./404.module.css";
 
-import { ReactComponent as Hurple } from "../assets/hurple.svg";
-
+import Hurple from "../assets/hurple.svg?react";
 import MetaTags from "../components/metaTags.jsx";
 
 const FourOhFour = () => {
