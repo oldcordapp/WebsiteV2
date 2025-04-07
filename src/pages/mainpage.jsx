@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import Cookies from "js-cookie";
-import MetaTags from "../components/metaTags.js";
+import MetaTags from "../components/metaTags.jsx";
 import styles from "./mainpage.module.css";
 import taglines from "../assets/taglines.json";
 import image2015 from "../assets/images/server_settings.png";
@@ -178,7 +178,7 @@ const MainPage = () => {
             onClick={(e) => {
               e.preventDefault();
               onGetStarted("https://staging.oldcordapp.com/selector");
-            }} style={{'display' : 'none'}}
+            }}
           >
             Get Started
           </a>
@@ -355,7 +355,7 @@ const MainPage = () => {
               onClick={(e) => {
                 e.preventDefault();
                 onGetStarted("https://staging.oldcordapp.com/selector");
-              }} style={{'display' : 'none'}}
+              }}
             >
               Get Started
             </a>

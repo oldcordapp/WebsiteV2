@@ -3,7 +3,7 @@ import sectionStyles from "./sections.module.css";
 
 import { ReactComponent as Logo } from "../assets/logo.svg";
 
-import MetaTags from "../components/metaTags.js";
+import MetaTags from "../components/metaTags.jsx";
 import { useOutletContext } from "react-router-dom";
 
 const About = () => {
@@ -175,7 +175,7 @@ const About = () => {
               onClick={(e) => {
                 e.preventDefault();
                 onGetStarted("https://staging.oldcordapp.com/selector");
-              }} style={{'display' : 'none'}}
+              }}
             >
               Get Started
             </a>

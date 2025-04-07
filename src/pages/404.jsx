@@ -5,7 +5,7 @@ import styles from "./404.module.css";
 
 import { ReactComponent as Hurple } from "../assets/hurple.svg";
 
-import MetaTags from "../components/metaTags.js";
+import MetaTags from "../components/metaTags.jsx";
 
 const FourOhFour = () => {
   const [onGetStarted] = useOutletContext();

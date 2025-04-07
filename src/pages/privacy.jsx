@@ -1,6 +1,6 @@
 import styles from "./legal.module.css";
 import sectionStyles from "./sections.module.css";
-import MetaTags from "../components/metaTags.js";
+import MetaTags from "../components/metaTags.jsx";
 
 const Privacy = () => {
   return (

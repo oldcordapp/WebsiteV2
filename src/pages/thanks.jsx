@@ -1,7 +1,7 @@
 import styles from "./thanks.module.css";
 import sectionStyles from "./sections.module.css";
 
-import MetaTags from "../components/metaTags.js";
+import MetaTags from "../components/metaTags.jsx";
 
 const Thanks = () => {
   return (

@@ -5,21 +5,21 @@ import { HelmetProvider } from "react-helmet-async";
 import Cookies from "js-cookie";
 
 import "./index.css";
-import Header from "./components/header.js";
-import Notice from "./components/notice.js";
-import Footer from "./components/footer.js";
-import DialogBox from "./components/dialogBox.js";
+import Header from "./components/header.jsx";
+import Notice from "./components/notice.jsx";
+import Footer from "./components/footer.jsx";
+import DialogBox from "./components/dialogBox.jsx";
 
-import MainPage from "./pages/mainpage.js";
-import Download from "./pages/download.js";
-import Terms from "./pages/terms.js";
-import Privacy from "./pages/privacy.js";
-import Guidelines from "./pages/guidelines.js";
-import About from "./pages/about.js";
-import Thanks from "./pages/thanks.js";
-import CookiePolicy from "./pages/cookies.js";
+import MainPage from "./pages/mainpage.jsx";
+import Download from "./pages/download.jsx";
+import Terms from "./pages/terms.jsx";
+import Privacy from "./pages/privacy.jsx";
+import Guidelines from "./pages/guidelines.jsx";
+import About from "./pages/about.jsx";
+import Thanks from "./pages/thanks.jsx";
+import CookiePolicy from "./pages/cookies.jsx";
 
-import FourOhFour from "./pages/404.js";
+import FourOhFour from "./pages/404.jsx";
 
 const GetStartedContext = createContext();
 
