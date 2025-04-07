@@ -1,7 +1,6 @@
 import React, { useState, useEffect, createContext, useCallback } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes, useLocation, Outlet } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
 import Cookies from "js-cookie";
 
 import "./index.css";
@@ -83,10 +82,8 @@ const App = () => (
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HelmetProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </HelmetProvider>
   </React.StrictMode>
 );
