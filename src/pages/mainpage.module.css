@@ -159,3 +159,23 @@
 .upsell-button {
   margin-top: 25px;
 }
+
+
+@media (max-width: 1000px) {
+    .upsell-section-content img,
+    .upsell-section-content svg {
+      max-height: 400px;
+      height: auto !important;
+      width: 600px;
+      max-width: 100% !important;
+      object-fit: contain;
+      margin: auto !important;
+      margin-top: initial !important;
+    }
+
+
+    .upsell-section-content {
+          display: block !important;
+          max-width: initial !important;
+    }
+}

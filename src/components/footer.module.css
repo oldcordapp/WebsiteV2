@@ -102,3 +102,17 @@
   justify-content: center;
   text-align: center;
 }
+
+@media (max-width: 1000px) {
+  .notice {
+    text-align: center !important;
+    font-size: smaller !important;
+    font-weight: 500 !important;
+
+  }
+  
+  .content {
+    
+    max-width: min-content !important;
+  }
+}

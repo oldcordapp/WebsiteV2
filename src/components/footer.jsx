@@ -55,6 +55,8 @@ const Footer = ({ onGetStarted, textColorClass }) => {
             </span>
             <span className={styles["navigation-link"]}>Status</span>
           </div>
+          {
+            /*
           <div className={styles["navigation-section"]}>
             <span className={styles["navigation-header"]}>More</span>
             <span className={styles["navigation-link"]}>
@@ -63,6 +65,8 @@ const Footer = ({ onGetStarted, textColorClass }) => {
               </a>
             </span>
           </div>
+          */
+          }
         </div>
         <hr className={styles.separator} />
         <div
