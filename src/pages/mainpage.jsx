@@ -162,7 +162,7 @@ const MainPage = () => {
     <div>
       <MetaTags
         title="Oldcord — Late 2010s instant messaging service revival"
-        description="Oldcord revives late 2010s instant messaging. Relive nostalgia while connecting with friends and building your own community in a familiar setting."
+        description="Instant messaging service that is all fun and nostalgia. Rewind back to 2015-2018 now!"
       />
       <div className={styles.header}>
         <div className={styles["tagline-container"]}>
@@ -178,7 +178,8 @@ const MainPage = () => {
             onClick={(e) => {
               e.preventDefault();
               onGetStarted("https://staging.oldcordapp.com/selector");
-            }} style={{'display' : 'none'}}
+            }}
+            style={{ display: "none" }}
           >
             Get Started
           </a>
@@ -234,16 +235,13 @@ const MainPage = () => {
           <div className={styles["upsell-section-content"]}>
             <img src={selector} />
             <div>
-              <span className={styles["upsell-title"]}>
-                Woah, a time machine???
-              </span>
+              <span className={styles["upsell-title"]}>So many options!!!</span>
               <span className={styles["upsell-text"]}>
-                Want to relive the glory days of chatting? We gotchu fam! Jump
-                back to any version you want - from the OG 2015 vibes to that
-                wild moment when @someone came to party (and definitely didn't
-                cause any chaos... totally... 100%... maybe). Each version comes
-                with its own aesthetic and quirks. It's basically time travel,
-                but for your chat!
+                Are you an old school kid or are you the mature<i>-ish</i> 2018
+                kinda guy? We gotchu! There's never too many options in the
+                Oldcord Selector. Not to your liking? We got a client mod
+                built-in! Extend, embrace, and what you think is extinguish
+                would actually be EXCITEMENT!
               </span>
             </div>
           </div>
@@ -255,12 +253,14 @@ const MainPage = () => {
                 No more flashbang profiles!!!
               </span>
               <span className={styles["upsell-text"]}>
-                Remember the simple life? When checking profiles didn't feel
-                like staring directly into the sun? WELL GUESS WHAT - we brought
-                back that sweet, sweet simplicity! No more rainbow lightning
-                storm profile themes or spinning galaxy backgrounds. Just pure,
-                clean, beautiful interfaces that won't make your retinas cry.
-                Your eyes can thank us later (⌐■_■)
+                Seriously, remember that time where you open up a profile and
+                did not flashbang you with profile decorations that screams too
+                much for an instant messaging app? You got so annoyed when you
+                checked Settings {">"} Accessibility only to find that you can
+                only sync the colors back to your closen theme which should have
+                been the default in the first place anyway but still couldn't
+                get rid of those bajillion animations? Luckily 2018 and before
+                doesn't have those and so you are safe! No more headaches!
               </span>
             </div>
             <img src={simple} />
@@ -271,44 +271,24 @@ const MainPage = () => {
             <img src={atsomeone} />
             <div>
               <span className={styles["upsell-title"]}>
-                BRAIN BRAIN BRAIN BRAIN @someone IS HERE!
-              </span>
-              <span
-                className={styles["upsell-text"]}
-                style={{ marginBottom: "5px", fontStyle: "italic" }}
-              >
-                glitch intensifies
+                BRAIN BRAIN BRAIN BRAIN BRAIN @someone is back!
               </span>
               <span
                 className={styles["upsell-text"]}
                 style={{ marginBottom: "5px" }}
               >
-                INTRODUCING: The most RANDOM feature you never knew you needed!
-                Just type @someone and BOOM! Random chaos! Random pings! Random
-                EVERYTHING!
+                Welcome to the marketing page! Remember back in 2018 they said
+                "[Instant messaging service] now has @someone!" Only to be
+                disappointed that it was an April Fools joke? Fe-e-ar not, my
+                friend! Oldcord brought the feature back, and you can try out
+                the effects of @someone as much as you like!
               </span>
-              <span
-                className={styles["upsell-text"]}
+              <small
+                className={styles["upsell-small-print"]}
                 style={{ marginBottom: "5px" }}
               >
-                HELP! I've fallen into randomness and I need @someone!
-                EEEEEEEEEEEEEEEEEEEEEEEE-{" "}
-                <span style={{ fontStyle: "italic" }}>glitch noises</span>
-              </span>
-              <span
-                className={styles["upsell-text"]}
-                style={{ marginBottom: "5px" }}
-              >
-                Will it ping your local meme master? That person who's been AFK
-                since forever? WHO KNOWS! That's the beauty of @someone!
-              </span>
-              <span
-                className={styles["upsell-text"]}
-                style={{ marginBottom: "5px" }}
-              >
-                DO IT DO IT DO IT DO IT (Warning: May cause excessive randomness
-                and spontaneous ping parties)
-              </span>
+                <i>Someone help me! I can't get up I need @someone!</i>
+              </small>
             </div>
           </div>
         </div>
@@ -316,26 +296,23 @@ const MainPage = () => {
           <div className={styles["upsell-section-content"]}>
             <div>
               <span className={styles["upsell-title"]}>
-                Run your own server (for real tho)
+                Best of all, it's all open source!
               </span>
               <span className={styles["upsell-text"]}>
-                Want to host your own slice of chat history? NOW YOU CAN! Our
-                open-source* server implementation lets you set up faster than
-                you can say "wumpus". It's powerful, it's FREE, and it's
-                probably not haunted!
+                If you're wondering, "isn't this a keylogger"? First of all, how
+                can we log your keys within a sandboxed window of a browser? For
+                real though, every code to run Oldcord is open source! You can
+                help create new plugins, fix issues, submit bug report, and help
+                make Oldcord better!
               </span>
               <span className={styles["upsell-small-print"]}>
-                *Legal Shenanigans (but like, the good kind): Client-side magic
-                happens right in your browser - our bootloader fetches files,
-                patches them on the fly, and runs everything locally!
-                Server-side? 100% our own reverse-engineered code built from
-                public archaeology - no yoinking their code! We're just
-                time-traveling researchers exploring your chat app's rad past!
-                While this is still in that gray area like other mods, we keep
-                it squeaky clean by running everything locally and focusing
-                purely on historical exploration. Think of us as your friendly
-                neighborhood chat app museum! *polishes archaeology badge* 🏺
-                Check out our about page for the full scoop!
+                Here's the legal footnote: The code from the instant messaging
+                service is not included in the code as they are closed source.
+                To the lawyers from the service, we do not distribute modified
+                propritetary code based of your service nor include your
+                propritetary code in our repository in any shape or form and we
+                strictly use publicly available information, please check the
+                about page for more information.
               </span>
             </div>
             <OpenSource style={{ color: "#06152a" }} />
@@ -355,7 +332,8 @@ const MainPage = () => {
               onClick={(e) => {
                 e.preventDefault();
                 onGetStarted("https://staging.oldcordapp.com/selector");
-              }} style={{'display' : 'none'}}
+              }}
+              style={{ display: "none" }}
             >
               Get Started
             </a>
