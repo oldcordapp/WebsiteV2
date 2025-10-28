@@ -240,7 +240,7 @@ const MainPage = () => {
                 Are you an old school kid or are you the mature<i>-ish</i> 2018
                 kinda guy? We gotchu! There's never too many options in the
                 Oldcord Selector. Not to your liking? We got a client mod
-                built-in! Extend, embrace, and what you think is extinguish
+                built-in! Embrace, extend, and what you think is extinguish
                 would actually be EXCITEMENT!
               </span>
             </div>
