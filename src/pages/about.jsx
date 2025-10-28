@@ -58,7 +58,7 @@ const About = () => {
             Since 2022, Oldcord has developed many features to enhance the
             experience of using an older version of the instant messaging
             service. Unlike other revivals of the same service which only
-            provided a single version, we prove multiple versions that can be
+            provided a single version, we provide multiple versions that can be
             chosen by the user. Those versions are connected to a single backend
             providing responses specific to the builds, allowing users using
             different versions to interact with each other.
