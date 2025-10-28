@@ -29,7 +29,7 @@ const Footer = ({ onGetStarted, textColorClass }) => {
           <div className={styles["navigation-section"]}>
             <span className={styles["navigation-header"]}>Advanced users</span>
             <span className={styles["navigation-link"]}>
-              <a href="https://staging.oldcordapp.com/developers">Bot Portal</a>
+              <a href="https://staging.oldcordapp.com/developers">Developer Portal</a>
             </span>
             <span className={styles["navigation-link"]}>
               <a href="https://staging.oldcordapp.com/developers/docs/intro">

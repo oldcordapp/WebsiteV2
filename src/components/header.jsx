@@ -8,7 +8,7 @@ import GitHub from "../assets/github.svg?react";
 
 const NAV_ITEMS = [
   { to: "download", label: "Download" },
-  { href: "https://staging.oldcordapp.com/developers", label: "Bot Portal" },
+  { href: "https://staging.oldcordapp.com/developers", label: "Developer Portal" },
 ];
 
 const SOCIAL_LINKS = [
