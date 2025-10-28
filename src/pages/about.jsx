@@ -93,11 +93,11 @@ const About = () => {
             The hosted instance of Oldcord has been closed once due to the
             influx of people who did not respect us and the community. At that
             time, we did not know how to manage an instance (including the fact
-            that instance moderation tools were not available at that time), and
-            so we took it down and implement the missing management tools we
-            need, and to take a break from maintaining an ever growing community
-            that seemed out of control. Oldcord also has created so-called
-            enemies from people of other communities.
+            that instance moderation tools were not available at that time), so
+            we took it down and implement the missing management tools we need,
+            and to take a break from maintaining an ever growing community that
+            seemed out of control. Oldcord also has created so-called enemies
+            from people of other communities.
           </span>
           <span className={sectionStyles.text}>
             Of course, operating an instance comes with its challenges and
