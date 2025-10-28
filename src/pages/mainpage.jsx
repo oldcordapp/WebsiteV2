@@ -235,7 +235,7 @@ const MainPage = () => {
                 did not flashbang you with profile decorations that screams too
                 much for an instant messaging app? You got so annoyed when you
                 checked Settings {">"} Accessibility only to find that you can
-                only sync the colors back to your closen theme which should have
+                only sync the colors back to your chosen theme which should have
                 been the default in the first place anyway but still couldn't
                 get rid of those bajillion animations? Luckily 2018 and before
                 doesn't have those and so you are safe! No more headaches!
