@@ -10,7 +10,7 @@ const Privacy = () => {
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Privacy Policy</div>
           <div className={`${styles["tagline-subtitle"]} text-light-gray`}>
-            Last Updated: November 15th, 2024 | Effective: TBD
+            Last Updated: October 28th, 2025 | Effective: TBD
           </div>
         </div>
       </div>
@@ -73,12 +73,6 @@ const Privacy = () => {
               <li className={sectionStyles.text}>
                 IP address (recorded at registration and login)
               </li>
-              <li className={sectionStyles.text}>
-                Operating system information (hashed and salted)
-              </li>
-              <li className={sectionStyles.text}>
-                Browser information (hashed and salted)
-              </li>
             </ul>
           </ul>
           <span className={sectionStyles.subtitle}>
@@ -88,6 +82,8 @@ const Privacy = () => {
             We are committed to minimizing data collection. We do not collect:
           </span>
           <ul>
+            <li className={sectionStyles.text}>Operating system information</li>
+            <li className={sectionStyles.text}>Browser information</li>
             <li className={sectionStyles.text}>Phone numbers</li>
             <li className={sectionStyles.text}>Any sensitive personal data</li>
             <li className={sectionStyles.text}>
@@ -103,8 +99,7 @@ const Privacy = () => {
           </span>
           <ul>
             <li className={sectionStyles.text}>
-              Device information (IP address, operating system, browser
-              information)
+              Device information (IP address)
             </li>
           </ul>
           <span className={sectionStyles.title}>
