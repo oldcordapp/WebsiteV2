@@ -123,7 +123,15 @@
 }
 
 .upsell-section-dark {
-  background-color: #f3f8fd;
+  background-color: #ebf2fc;
+}
+
+.upsell-section-white {
+  background-color: white;
+}
+
+.upsell-section-hurple {
+  background-color: #1f6ad3;
 }
 
 .upsell-section-use-now {
@@ -133,7 +141,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  height: 200px;
+  justify-content: center;
 }
 
 .upsell-title {
@@ -160,22 +169,39 @@
   margin-top: 25px;
 }
 
+.upsell-section-logo-marquee-wrapper {
+  height: 100px;
+  align-items: center;
+  display: flex;
+}
+
+.upsell-section-logo-marquee {
+  width: 100%;
+  align-items: center;
+}
+
+
+.upsell-section-logo-marquee * {
+  align-items: center;
+  height: 100%;
+  color: white;
+  fill: white;
+}
 
 @media (max-width: 1000px) {
-    .upsell-section-content img,
-    .upsell-section-content svg {
-      max-height: 400px;
-      height: auto !important;
-      width: 600px;
-      max-width: 100% !important;
-      object-fit: contain;
-      margin: auto !important;
-      margin-top: initial !important;
-    }
+  .upsell-section-content img,
+  .upsell-section-content svg {
+    max-height: 400px;
+    height: auto !important;
+    width: 600px;
+    max-width: 100% !important;
+    object-fit: contain;
+    margin: auto !important;
+    margin-top: initial !important;
+  }
 
-
-    .upsell-section-content {
-          display: block !important;
-          max-width: initial !important;
-    }
+  .upsell-section-content {
+    display: block !important;
+    max-width: initial !important;
+  }
 }

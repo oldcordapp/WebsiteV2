@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Cookies from "js-cookie";
 import MetaTags from "../components/metaTags.jsx";
 import styles from "./mainpage.module.css";
@@ -13,38 +13,20 @@ import simple from "../assets/images/user_profile.png";
 import atsomeone from "../assets/images/i_need_atsomeone.png";
 import OpenSource from "../assets/opensource.svg?react";
 import { useOutletContext } from "react-router-dom";
+import Marquee from "../components/Marquee.jsx";
+
+import Hurple from "../assets/hurple.svg?react";
 
 const width = 200;
 const height = 150;
-const marginRight = 10;
-
-const marqueeAnimation = (width) => keyframes`
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-${width}px);
-  }
-`;
-
-const MarqueeContent = styled.div.withConfig({
-  shouldForwardProp: (prop) => !["totalWidth"].includes(prop),
-})`
-  display: flex;
-  animation: ${({ totalWidth }) => marqueeAnimation(totalWidth)} 15s linear
-    infinite;
-  &:hover {
-    animation-play-state: paused;
-  }
-`;
 
 const Image = styled.img`
-  margin-right: ${marginRight}px;
   max-width: ${width}px;
   max-height: ${height}px;
   min-width: ${width}px;
   min-height: ${height}px;
   position: relative;
+  display: block;
 
   &:hover {
     cursor: pointer;
@@ -127,8 +109,6 @@ const MainPage = () => {
     },
   ];
 
-  let totalWidth = images.length * (width + marginRight);
-
   const handleMouseEnter = (e, info, releaseDateCode) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const tooltipY = rect.top - 10;
@@ -205,30 +185,28 @@ const MainPage = () => {
             ))}
           </Tooltip>
         )}
+        
         <div className={styles.marquee}>
-          <MarqueeContent totalWidth={totalWidth}>
-            {images
-              .concat(images)
-              .concat(images)
-              .map((img, index) => (
-                <div
-                  key={index}
-                  style={{ position: "relative" }}
-                  onMouseEnter={(e) =>
-                    handleMouseEnter(e, img.info, img.releaseDateCode)
-                  }
-                  onMouseLeave={handleMouseLeave}
+          <Marquee speed={60} pauseOnHover={true} gap="10px">
+            {images.map((img, index) => (
+              <div
+                key={index}
+                onMouseEnter={(e) =>
+                  handleMouseEnter(e, img.info, img.releaseDateCode)
+                }
+                onMouseLeave={handleMouseLeave}
+              >
+                <a
+                  href="#"
+                  onClick={(e) => handleImageClick(e, img.releaseDateCode)}
                 >
-                  <a
-                    href="#"
-                    onClick={(e) => handleImageClick(e, img.releaseDateCode)}
-                  >
-                    <Image src={img.src} alt={`Image ${index}`} />
-                  </a>
-                </div>
-              ))}
-          </MarqueeContent>
+                  <Image src={img.src} alt={`Oldcord version from ${getFormattedDate(img.releaseDateCode)}`} />
+                </a>
+              </div>
+            ))}
+          </Marquee>
         </div>
+        
       </div>
       <div className={styles.upsell}>
         <div className={styles["upsell-section-white"]}>
@@ -266,12 +244,52 @@ const MainPage = () => {
             <img src={simple} />
           </div>
         </div>
+        <div className={styles["upsell-section-logo-wrapper"]}>
+          <div className={styles["upsell-section-dark"]} style={{height: "20px"}}/>
+          <div
+            className={`${styles["upsell-section-hurple"]} ${styles["upsell-section-logo-marquee-wrapper"]}`}
+          >
+            <div className={styles["upsell-section-logo-marquee"]}>
+              <Marquee duration={60} gap="20px">
+                <Hurple style={{ height: "30px" }} />
+                <span
+                  style={{ fontSize: "40px" }}
+                  className={styles["upsell-text"]}
+                >
+                  Experience Nostalgia
+                </span>
+                <Hurple style={{ height: "30px" }} />
+                <span
+                  style={{ fontSize: "40px" }}
+                  className={styles["upsell-text"]}
+                >
+                  Relive
+                </span>
+                <Hurple style={{ height: "30px" }} />
+                <span
+                  style={{ fontSize: "40px" }}
+                  className={styles["upsell-text"]}
+                >
+                  Rediscover
+                </span>
+                <Hurple style={{ height: "30px" }} />
+                <span
+                  style={{ fontSize: "40px" }}
+                  className={styles["upsell-text"]}
+                >
+                  Rewind
+                </span>
+              </Marquee>
+            </div>
+          </div>
+          <div className={styles["upsell-section-white"]} style={{height: "20px"}}/>
+        </div>
         <div className={styles["upsell-section-white"]}>
           <div className={styles["upsell-section-content"]}>
             <img src={atsomeone} />
             <div>
               <span className={styles["upsell-title"]}>
-                BRAIN BRAIN BRAIN BRAIN BRAIN @someone is back!
+                BRAIN BRAIN BRAIN BRAIN BRAIN @someone is back!!!
               </span>
               <span
                 className={styles["upsell-text"]}
@@ -296,7 +314,7 @@ const MainPage = () => {
           <div className={styles["upsell-section-content"]}>
             <div>
               <span className={styles["upsell-title"]}>
-                Best of all, it's all open source!
+                Best of all, it's all open source!!!
               </span>
               <span className={styles["upsell-text"]}>
                 If you're wondering, "isn't this a keylogger"? First of all, how
@@ -318,7 +336,7 @@ const MainPage = () => {
             <OpenSource style={{ color: "#06152a" }} />
           </div>
         </div>
-        <div className={styles["upsell-section-dark"]}>
+        <div className={styles["upsell-section-white"]}>
           <div className={styles["upsell-section-use-now"]}>
             <span className={styles["upsell-title"]}>
               Use Oldcord now puhhhlease!
