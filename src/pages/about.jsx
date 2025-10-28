@@ -56,7 +56,7 @@ const About = () => {
           </span>
           <span className={sectionStyles.text}>
             Since 2022, Oldcord has developed many features to enhance the
-            experience of using an older version of the instance messaging
+            experience of using an older version of the instant messaging
             service. Unlike other revivals of the same service which only
             provided a single version, we prove multiple versions that can be
             chosen by the user. Those versions are connected to a single backend
