@@ -66,7 +66,7 @@ const About = () => {
           <span className={sectionStyles.text}>
             One of the other impressive features we have done is our bootloader.
             Unlike other revival services that may be in more legal trouble than
-            us by distrubuting modified code, we circumvented the issue entirely
+            us by distributing modified code, we circumvented the issue entirely
             by downloading the unmodified client files in browser, similar to
             how a modular patcher for apps work by requiring the user to
             download the files itself before patching.
