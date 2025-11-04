@@ -185,7 +185,7 @@ const MainPage = () => {
             ))}
           </Tooltip>
         )}
-        
+
         <div className={styles.marquee}>
           <Marquee speed={60} pauseOnHover={true} gap="10px">
             {images.map((img, index) => (
@@ -200,13 +200,17 @@ const MainPage = () => {
                   href="#"
                   onClick={(e) => handleImageClick(e, img.releaseDateCode)}
                 >
-                  <Image src={img.src} alt={`Oldcord version from ${getFormattedDate(img.releaseDateCode)}`} />
+                  <Image
+                    src={img.src}
+                    alt={`Oldcord version from ${getFormattedDate(
+                      img.releaseDateCode
+                    )}`}
+                  />
                 </a>
               </div>
             ))}
           </Marquee>
         </div>
-        
       </div>
       <div className={styles.upsell}>
         <div className={styles["upsell-section-white"]}>
@@ -245,7 +249,10 @@ const MainPage = () => {
           </div>
         </div>
         <div className={styles["upsell-section-logo-wrapper"]}>
-          <div className={styles["upsell-section-dark"]} style={{height: "20px"}}/>
+          <div
+            className={styles["upsell-section-dark"]}
+            style={{ height: "20px" }}
+          />
           <div
             className={`${styles["upsell-section-hurple"]} ${styles["upsell-section-logo-marquee-wrapper"]}`}
           >
@@ -282,14 +289,17 @@ const MainPage = () => {
               </Marquee>
             </div>
           </div>
-          <div className={styles["upsell-section-white"]} style={{height: "20px"}}/>
+          <div
+            className={styles["upsell-section-white"]}
+            style={{ height: "20px" }}
+          />
         </div>
         <div className={styles["upsell-section-white"]}>
           <div className={styles["upsell-section-content"]}>
             <img src={atsomeone} />
             <div>
               <span className={styles["upsell-title"]}>
-                BRAIN BRAIN BRAIN BRAIN BRAIN @someone is back!!!
+                BRAIN BRAIN BRAIN BRAIN BRAIN @someone is back!!! 👌👀
               </span>
               <span
                 className={styles["upsell-text"]}
@@ -298,8 +308,9 @@ const MainPage = () => {
                 Welcome to the marketing page! Remember back in 2018 they said
                 "[Instant messaging service] now has @someone!" Only to be
                 disappointed that it was an April Fools joke? Fe-e-ar not, my
-                friend! Oldcord brought the feature back, and you can try out
-                the effects of @someone as much as you like!
+                friend! Oldcord brought @someone back, and you can try ping
+                somebody at raaaannnddoommm! Type @someone! THAT'S SOME GOOD
+                SOMEONE RIGHT ✔️ THERE ✔️
               </span>
               <small
                 className={styles["upsell-small-print"]}
