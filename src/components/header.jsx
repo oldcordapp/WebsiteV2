@@ -5,6 +5,7 @@ import Logo from "../assets/logo.svg?react";
 import Clyde from "../assets/clyde.svg?react";
 import Chirp from "../assets/chirp.svg?react";
 import GitHub from "../assets/github.svg?react";
+import Spacebar from "../assets/spacebar.svg?react";
 
 const NAV_ITEMS = [
   { to: "download", label: "Download" },
@@ -13,7 +14,8 @@ const NAV_ITEMS = [
 
 const SOCIAL_LINKS = [
   //{ href: "https://x.com/oldcord", Icon: Chirp },
-  // { href: "https://discord.gg/VdxA4Dh8rq", Icon: Clyde },
+  //{ href: "https://discord.gg/VdxA4Dh8rq", Icon: Clyde },
+  //{ href: "https://fermi.chat/invite/tXAEta?instance=https%3A%2F%2Fspacebar.chat", Icon: Spacebar },
   { href: "https://github.com/oldcordapp", Icon: GitHub },
 ];
 
