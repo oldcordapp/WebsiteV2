@@ -10,7 +10,7 @@ const Guidelines = () => {
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Instance Guidelines</div>
           <div className={`${styles["tagline-subtitle"]} text-light-gray`}>
-            Last Updated: November 15th, 2024 | Effective: December 6th, 2025
+            Last Updated: December 6th, 2025 | Effective: December 6th, 2025
           </div>
         </div>
       </div>
@@ -190,7 +190,7 @@ const Guidelines = () => {
           <span className={sectionStyles.title}>Ending Words</span>
           <span className={sectionStyles.text}>
             Just be a good person — treat others how you want to be treated —
-            and we won't get in your way. Thank you for helping keep Oldcord a
+            and we won't get in your way. Thank you for keeping Oldcord a
             safe and enjoyable space for everyone.
           </span>
         </div>
