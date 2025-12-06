@@ -15,7 +15,6 @@ import Terms from "./pages/terms.jsx";
 import Privacy from "./pages/privacy.jsx";
 import Guidelines from "./pages/guidelines.jsx";
 import About from "./pages/about.jsx";
-import Thanks from "./pages/thanks.jsx";
 import CookiePolicy from "./pages/cookies.jsx";
 
 import FourOhFour from "./pages/404.jsx";
@@ -73,7 +72,6 @@ const App = () => (
       <Route path="/guidelines" element={<Guidelines />} />
       <Route path="/cookies" element={<CookiePolicy />} />
       <Route path="/about" element={<About />} />
-      <Route path="/thanks" element={<Thanks />} />
       <Route path="*" element={<FourOhFour />} />
     </Route>
   </Routes>

@@ -23,7 +23,7 @@ const Footer = ({ onGetStarted, textColorClass }) => {
               <Link to="download">Download</Link>
             </span>
             <span className={styles["navigation-link"]}>
-              <Link to="thanks">Special Thanks</Link>
+              <a href="https://github.com/oldcordapp/OldcordV3">GitHub</a>
             </span>
           </div>
           <div className={styles["navigation-section"]}>
