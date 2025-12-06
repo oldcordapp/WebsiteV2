@@ -115,10 +115,9 @@ const About = () => {
           <span className={sectionStyles.title}>Who works on Oldcord?</span>
           <span className={sectionStyles.text}>
             We have a dedicated team of developers working in different areas,
-            but in general, the "Special Thanks" page or our GitHub repository
-            shows how many people have contributed to this project. We also have
-            our partners helping to preserve the service's history. (Some are
-            also working on Oldcord!)
+            but in general, our GitHub repository shows how many people have
+            contributed to this project. We also have our partners helping to
+            preserve the service's history. (Some are also working on Oldcord!)
           </span>
           <span className={sectionStyles.text}>
             Oldcord is open source, allowing anyone to contribute to our efforts
