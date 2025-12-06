@@ -10,7 +10,7 @@ const Terms = () => {
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Terms and Conditions</div>
           <div className={`${styles["tagline-subtitle"]} text-light-gray`}>
-            Last Updated: November 15th, 2024 | Effective: TBD
+            Last Updated: November 15th, 2024 | Effective: December 6th, 2025
           </div>
         </div>
       </div>
