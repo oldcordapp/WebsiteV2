@@ -10,7 +10,7 @@ const Privacy = () => {
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Privacy Policy</div>
           <div className={`${styles["tagline-subtitle"]} text-light-gray`}>
-            Last Updated: October 28th, 2025 | Effective: December 6th, 2025
+            Last Updated: December 16th, 2025 | Effective: December 16th, 2025
           </div>
         </div>
       </div>
@@ -100,6 +100,10 @@ const Privacy = () => {
           <ul>
             <li className={sectionStyles.text}>
               Device information (IP address)
+            </li>
+            <li className={sectionStyles.text}>
+              Device fingerprint (generated via our own internal solution for
+              security and abuse prevention)
             </li>
           </ul>
           <span className={sectionStyles.title}>
