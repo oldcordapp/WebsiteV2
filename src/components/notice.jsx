@@ -15,7 +15,7 @@ const Notice = () => {
         },
       });
 
-      if (response.status !== 200) {
+      if (response.status === 404) {
         setShowNotice(true);
       }
     };

@@ -159,7 +159,7 @@ const About = () => {
                 e.preventDefault();
                 onGetStarted("https://staging.oldcordapp.com/selector");
               }}
-              style={{ display: "none" }}
+              
             >
               Get Started
             </a>
