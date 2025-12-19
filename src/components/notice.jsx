@@ -8,11 +8,11 @@ const Notice = () => {
   useEffect(() => {
     const checkApiStatus = async () => {
       const response = await fetch("https://staging.oldcordapp.com/api", {
-        mode: 'no-cors',
+        mode: "no-cors",
         headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        }
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
       });
 
       if (response.status !== 200) {
@@ -30,7 +30,8 @@ const Notice = () => {
   if (showNotice) {
     return (
       <div className={styles.content}>
-        Instance is currently closed until futher notice. Check GitHub for self-hosting instructions. Community instances will be featured in the instance page as they become available.
+        Instance is currently experiencing problems. Please wait until it's
+        resolved. Join our Spacebar guild in the meantime.
       </div>
     );
   }
