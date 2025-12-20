@@ -244,7 +244,7 @@ const Privacy = () => {
             You can request data deletion or exercise your privacy rights by:
           </span>
           <ul>
-            <li className={sectionStyles.text}>Email: contact@noia.site</li>
+            <li className={sectionStyles.text}>Email: contactnoia@protonmail.com</li>
             <li className={sectionStyles.text}>
               Direct Message: Through our Instance or Discord
             </li>
@@ -278,7 +278,7 @@ const Privacy = () => {
             practices, please contact us:
           </span>
           <ul>
-            <li className={sectionStyles.text}>Email: contact@noia.site</li>
+            <li className={sectionStyles.text}>Email: contactnoia@protonmail.com</li>
             <li className={sectionStyles.text}>
               Direct Message: Through our Instance or Discord
             </li>

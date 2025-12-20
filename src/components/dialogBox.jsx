@@ -9,7 +9,7 @@ const CHECKBOXES = [
   },
   {
     id: 'guidelines',
-    label: 'I have read the T&C, Privacy Policy and Instance Guidelines.'
+    label: 'I have read the Instance Terms, Privacy Policy and Instance Guidelines.'
   }
 ];
 
@@ -65,8 +65,8 @@ const DialogBox = ({ isOpen, onClose, redirectUrl }) => {
         </span>
 
         <span className={styles.subtitle} style={{ marginBottom: "20px" }}>
-          Finally, please also read the{' '}
-          {['T&C', 'Privacy Policy', 'Cookie Policy', 'Instance Guidelines'].map((text, i, arr) => (
+          Finally, please also read the information about {' '}
+          {['Terms', 'Privacy', 'Cookies', 'Guidelines'].map((text, i, arr) => (
             <span key={text}>
               <a href={`/${text.toLowerCase().replace(/\s/g, '')}`}>{text}</a>
               {i < arr.length - 1 && (i === arr.length - 2 ? ' and ' : ', ')}

@@ -218,7 +218,7 @@ const Terms = () => {
           <span className={sectionStyles.text}>
             You're free to stop using our instance at any time and for any
             reason. To terminate this agreement, you can contact us at
-            <span className={sectionStyles.bold}> contact@noia.site</span> to
+            <span className={sectionStyles.bold}> contactnoia@protonmail.com</span> to
             request account deletion and discontinue use of the instance.
           </span>
 
@@ -321,7 +321,7 @@ const Terms = () => {
             </span>
             {" "}We support the responsible reporting of security
             vulnerabilities. To report a security issue, please contact us at
-            <span className={sectionStyles.bold}> contact@noia.site</span>.
+            <span className={sectionStyles.bold}> contactnoia@protonmail.com</span>.
           </span>
 
           <span className={sectionStyles.title}>Updates to these terms</span>
@@ -340,7 +340,7 @@ const Terms = () => {
           <span className={sectionStyles.title}>Contacting each other</span>
           <span className={sectionStyles.text}>
             If you have any questions about these terms, please contact us at
-            <span className={sectionStyles.bold}> contact@noia.site</span>.
+            <span className={sectionStyles.bold}> contactnoia@protonmail.com</span>.
           </span>
         </div>
       </div>

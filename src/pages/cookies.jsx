@@ -98,7 +98,7 @@ const Cookies = () => {
           <span className={sectionStyles.text}>
             If you have any questions or concerns regarding our Cookie Policy,
             please feel free to contact us at
-            <span className={sectionStyles.bold}> contact@noia.site</span>.
+            <span className={sectionStyles.bold}> contactnoia@protonmail.com</span>.
           </span>
           <span className={sectionStyles.text}>
             Thank you for using Oldcord!
