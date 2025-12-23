@@ -337,8 +337,8 @@ const MainPage = () => {
                 Here's the legal footnote: The code from the instant messaging
                 service is not included in the code as they are closed source.
                 To the lawyers from the service, we do not distribute modified
-                propritetary code based of your service nor include your
-                propritetary code in our repository in any shape or form and we
+                proprietary code based of your service nor include your
+                proprietary code in our repository in any shape or form and we
                 strictly use publicly available information, please check the
                 about page for more information.
               </span>
