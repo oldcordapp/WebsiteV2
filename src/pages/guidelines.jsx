@@ -10,7 +10,7 @@ const Guidelines = () => {
         <div className={styles["tagline-container"]}>
           <div className={styles["tagline-title"]}>Instance Guidelines</div>
           <div className={`${styles["tagline-subtitle"]} text-light-gray`}>
-            Last Updated: December 6th, 2025 | Effective: December 6th, 2025
+            Last Updated: January 28th, 2026 | Effective: January 28th, 2026
           </div>
         </div>
       </div>
@@ -106,9 +106,8 @@ const Guidelines = () => {
               facilitate this activity.
             </li>
             <li className={sectionStyles.text}>
-              Self-bots are allowed as long as they do not abuse the API.
-              However, each account must be primarily associated with a human
-              user.
+              Do not use self-bots or user-bots. Each account must be associated
+              with a human, not a bot.
             </li>
             <li className={sectionStyles.text}>
               Do not engage with our service in an inauthentic way. This
@@ -190,8 +189,8 @@ const Guidelines = () => {
           <span className={sectionStyles.title}>Ending Words</span>
           <span className={sectionStyles.text}>
             Just be a good person — treat others how you want to be treated —
-            and we won't get in your way. Thank you for keeping Oldcord a
-            safe and enjoyable space for everyone.
+            and we won't get in your way. Thank you for keeping Oldcord a safe
+            and enjoyable space for everyone.
           </span>
         </div>
       </div>
