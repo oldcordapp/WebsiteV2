@@ -31,7 +31,7 @@ const About = () => {
           </span>
           <span className={sectionStyles.text}>
             You might be wondering, "why do we do this when XYZ theme does it
-            all?" Well, why not? In a time of coperate greed, moderation
+            all?" Well, why not? In a time of corporate greed, moderation
             neglect, and betraying what has been promised before, we wanted
             restore something that helps people communicate with their friends,
             meet new people, and to relieve earliest years of the service. We
